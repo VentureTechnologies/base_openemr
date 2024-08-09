@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ################################################################################
 #
-#    Cybrosys Technologies Pvt. Ltd.
+#    Venture Technologies, LLC.
 #
-#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-#    Author: Subina P (odoo@cybrosys.com)
+#    Copyright (C) 2024-TODAY Venture Technologies, LLC.(<https://www.venturetech.site>).
+#    Author: Jose Artavia (jartavia@venturetech.site)
 #
 #    You can modify it under the terms of the GNU AFFERO
 #    GENERAL PUBLIC LICENSE (AGPL v3), Version 3.
@@ -20,7 +20,7 @@
 #
 ################################################################################
 {
-    "name": "Hospital Management Odoo 17",
+    "name": "Open EMR Odoo 17",
     "version": "17.0.1.0.0",
     "category": "Services",
     "summary": """This Module Helps to Manage Patients Records, Doctors Details,
@@ -31,10 +31,10 @@
      doctors, patients, prescriptions, vaccines, etc. are all made easier 
      with the help of this module. This app offers a different dashboards for 
      different users.""",
-    "author": "Cybrosys Techno Solutions",
-    "company": "Cybrosys Techno Solutions",
-    "maintainer": "Cybrosys Techno Solutions",
-    "website": "https://www.cybrosys.com",
+    "author": "Venture Technologies",
+    "company": "Venture Technologies",
+    "maintainer": "Venture Technologies",
+    "website": "https://www.venturetech.site",
     "depends": ["website", "hr", "stock", "sale_management"],
     "data": [
         "security/base_hospital_management_groups.xml",
