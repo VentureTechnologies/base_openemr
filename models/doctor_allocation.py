@@ -90,7 +90,7 @@ class DoctorAllocation(models.Model):
         work_to_min = int((vals['work_to'] - work_to_hr) * 60)
         work_to = "{:02d}:{:02d}".format(work_to_hr, work_to_min)
         doctor_group = self.env.ref(
-            'base_hospital_management.base_hospital_management_group_doctor')
+            'base_openemr.base_openemr_group_doctor')
         if doctor_group in self.env.user.groups_id:
             default_doctor_id = self.env['hr.employee'].sudo().search(
                 [('user_id', '=', self.env.user.id)], limit=1)
@@ -121,7 +121,7 @@ class DoctorAllocation(models.Model):
         for doctor login"""
         res = super().default_get(doctor_id)
         doctor_group = self.env.ref(
-            'base_hospital_management.base_hospital_management_group_doctor')
+            'base_openemr.base_openemr_group_doctor')
         if doctor_group in self.env.user.groups_id:
             default_doctor_id = self.env['hr.employee'].sudo().search(
                 [('user_id', '=', self.env.user.id)], limit=1)

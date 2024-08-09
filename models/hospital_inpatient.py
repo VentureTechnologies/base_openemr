@@ -458,7 +458,7 @@ class HospitalInpatient(models.Model):
                 'doctor_name': self.attending_doctor_id.name,
             }
         return self.env.ref(
-            'base_hospital_management.action_report_patient_prescription'). \
+            'base_openemr.action_report_patient_prescription'). \
             report_action(self, data=data)
 
     @api.model

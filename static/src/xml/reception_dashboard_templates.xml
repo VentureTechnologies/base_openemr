@@ -35,13 +35,13 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div id="outpatient" class="col-md-4 r_dashButton o_outpatient_button"
                                         t-on-click="fetchAppointmentData">
-                                            <img src="base_hospital_management/static/src/img/out_p.png" width="80px" class="out_p_image"/>
+                                            <img src="base_openemr/static/src/img/out_p.png" width="80px" class="out_p_image"/>
                                             <p>Outpatient</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div id="inpatient" class="col-md-4 r_dashButton o_inpatient_button" t-on-click="createInPatient">
-                                            <img src="base_hospital_management/static/src/img/in_p.png" width="80px" class="in_p_img"/>
+                                            <img src="base_openemr/static/src/img/in_p.png" width="80px" class="in_p_img"/>
                                             <p>Inpatient</p>
                                         </div>
                                     </div>

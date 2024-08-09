@@ -452,7 +452,7 @@ class ResPartner(models.Model):
             'company_zip': company.zip,
         }
         return self.env.ref(
-            'base_hospital_management.action_report_patient_card'
+            'base_openemr.action_report_patient_card'
         ).report_action(None, data=data)
 
     @api.model

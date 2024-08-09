@@ -9,7 +9,7 @@
                 [('doctor_id.doctor_id.user_id','=',user.id)]
             </field>
             <field name="groups"
-                   eval="[(4, ref('base_hospital_management.base_hospital_management_group_doctor'))]"/>
+                   eval="[(4, ref('base_openemr.base_openemr_group_doctor'))]"/>
         </record>
         <!--        Multi company rule for doctor allocation records-->
         <record id="patient_booking_rule_company" model="ir.rule">

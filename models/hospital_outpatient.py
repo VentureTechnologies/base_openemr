@@ -175,7 +175,7 @@ class HospitalOutpatient(models.Model):
                 'doctor_name': record.doctor_id.doctor_id.name,
             }
         pdf = self.env['ir.actions.report'].sudo()._render_qweb_pdf(
-            'base_hospital_management.action_report_patient_prescription',
+            'base_openemr.action_report_patient_prescription',
             rec_id, data=data)
         record.attachment_id = self.env['ir.attachment'].sudo().create({
             'datas': base64.b64encode(pdf[0]),
@@ -313,5 +313,5 @@ class HospitalOutpatient(models.Model):
                 'doctor_name': self.doctor_id.doctor_id.name,
             }
         return self.env.ref(
-            'base_hospital_management.action_report_patient_prescription'). \
+            'base_openemr.action_report_patient_prescription'). \
             report_action(self, data=data)

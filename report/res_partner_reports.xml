@@ -5,8 +5,8 @@
         <field name="name">Patient Prescription</field>
         <field name="model">res.partner</field>
         <field name="report_type">qweb-pdf</field>
-        <field name="report_name">base_hospital_management.patient_prescription_report</field>
-        <field name="report_file">base_hospital_management.patient_prescription_report</field>
+        <field name="report_name">base_openemr.patient_prescription_report</field>
+        <field name="report_file">base_openemr.patient_prescription_report</field>
         <field name="binding_model_id" ref="model_res_partner"/>
         <field name="binding_type">report</field>
     </record>
@@ -90,11 +90,11 @@
         <field name="name">Patient Card</field>
         <field name="model">res.partner</field>
         <field name="report_type">qweb-pdf</field>
-        <field name="report_name">base_hospital_management.patient_card_report</field>
-        <field name="report_file">base_hospital_management.patient_card_report</field>
+        <field name="report_name">base_openemr.patient_card_report</field>
+        <field name="report_file">base_openemr.patient_card_report</field>
         <field name="binding_model_id" ref="model_res_partner"/>
         <field name="paperformat_id"
-               ref="base_hospital_management.paperformat_patient"/>
+               ref="base_openemr.paperformat_patient"/>
         <field name="binding_type">report</field>
     </record>
     <!--    Patient card template-->

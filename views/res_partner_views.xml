@@ -60,7 +60,7 @@
                 <header>
                     <button name="action_schedule" string="Add Appointment"
                             type="object"
-                            groups="base_hospital_management.base_hospital_management_group_manager,base_hospital_management.base_hospital_management_group_receptionist"
+                            groups="base_openemr.base_openemr_group_manager,base_openemr.base_openemr_group_receptionist"
                             class="oe_highlight"/>
                 </header>
                 <sheet>
@@ -166,7 +166,7 @@
                             </group>
                         </page>
                         <page name="family" string="Family and Insurance"
-                              groups="base_hospital_management.base_hospital_management_group_doctor,base_hospital_management.base_hospital_management_group_lab_assistant,base_hospital_management.base_hospital_management_group_pharmacist,base_hospital_management.base_hospital_management_group_nurse,base_hospital_management.base_hospital_management_group_receptionist,base_hospital_management.base_hospital_management_group_manager">
+                              groups="base_openemr.base_openemr_group_doctor,base_openemr.base_openemr_group_lab_assistant,base_openemr.base_openemr_group_pharmacist,base_openemr.base_openemr_group_nurse,base_openemr.base_openemr_group_receptionist,base_openemr.base_openemr_group_manager">
                             <group>
                                 <group>
                                     <field name="group"/>
@@ -316,7 +316,7 @@
                             </notebook>
                         </page>
                         <page name="medicine" string="Medical"
-                              groups="base_hospital_management.base_hospital_management_group_lab_assistant, base_hospital_management.base_hospital_management_group_pharmacist,base_hospital_management.base_hospital_management_group_nurse,base_hospital_management.base_hospital_management_group_receptionist,base_hospital_management.base_hospital_management_group_manager">
+                              groups="base_openemr.base_openemr_group_lab_assistant, base_openemr.base_openemr_group_pharmacist,base_openemr.base_openemr_group_nurse,base_openemr.base_openemr_group_receptionist,base_openemr.base_openemr_group_manager">
                             <notebook>
                                 <page string="Medicine">
                                     <field name="prescription_ids">

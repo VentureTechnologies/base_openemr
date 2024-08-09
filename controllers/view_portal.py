@@ -53,7 +53,7 @@ class ViewPortal(http.Controller):
             'vaccinations': v_list,
             'page_name': 'vaccination'
         }
-        return request.render("base_hospital_management.portal_my_vaccines",
+        return request.render("base_openemr.portal_my_vaccines",
                               values)
 
     @http.route(['/my/tests'], type='http', auth="public", website=True)
@@ -75,7 +75,7 @@ class ViewPortal(http.Controller):
             'tests': tests_list,
             'page_name': 'lab_test'
         }
-        return request.render("base_hospital_management.portal_my_tests",
+        return request.render("base_openemr.portal_my_tests",
                               values)
 
     @http.route('/my/tests/<int:test_id>', type="http", auth="public",
@@ -107,7 +107,7 @@ class ViewPortal(http.Controller):
             'page_name': 'test_results'
         }
         return request.render(
-            "base_hospital_management.portal_my_tests_results", values)
+            "base_openemr.portal_my_tests_results", values)
 
     @http.route('/my/op', type='http', auth="public",
                 website=True)
@@ -126,4 +126,4 @@ class ViewPortal(http.Controller):
             'page_name': 'op'
         }
         return request.render(
-            "base_hospital_management.portal_my_op", values)
+            "base_openemr.portal_my_op", values)

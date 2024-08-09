@@ -6,10 +6,10 @@
         <field name="model">lab.test.line</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">
-            base_hospital_management.report_patient_lab_tests
+            base_openemr.report_patient_lab_tests
         </field>
         <field name="report_file">
-            base_hospital_management.report_patient_lab_tests
+            base_openemr.report_patient_lab_tests
         </field>
         <field name="binding_model_id" ref="model_lab_test_line"/>
         <field name="binding_type">report</field>

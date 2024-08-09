@@ -8,7 +8,7 @@
         <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
             <t t-call="portal.portal_docs_entry">
                 <t t-set="icon" style="width: 60px; height: 60px;"
-                   t-value="'/base_hospital_management/static/src/img/vaccination1.png'"/>
+                   t-value="'/base_openemr/static/src/img/vaccination1.png'"/>
                 <t t-set="title">Vaccinations</t>
                 <t t-set="url" t-value="'/my/vaccinations'"/>
                 <t t-set="text">Preventive measure to protect against infectious diseases.</t>
@@ -23,7 +23,7 @@
         <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
             <t t-call="portal.portal_docs_entry">
                 <t t-set="icon"
-                   t-value="'/base_hospital_management/static/src/img/lab_test.svg'"/>
+                   t-value="'/base_openemr/static/src/img/lab_test.svg'"/>
                 <t t-set="title">Lab Tests</t>
                 <t t-set="url" t-value="'/my/tests'"/>
                 <t t-set="text">Tests provide valuable information for doctors to make treatment decisions.</t>
@@ -38,7 +38,7 @@
         <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
             <t t-call="portal.portal_docs_entry">
                 <t t-set="icon"
-                   t-value="'/base_hospital_management/static/src/img/op_ticket.svg'"/>
+                   t-value="'/base_openemr/static/src/img/op_ticket.svg'"/>
                 <t t-set="title">OP</t>
                 <t t-set="url" t-value="'/my/op'"/>
                 <t t-set="text">Outpatient appointments for medical consultations.</t>

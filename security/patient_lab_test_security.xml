@@ -10,7 +10,7 @@
                 ['|','|',('lab_id.technician_id.user_id','=',user.id),('lab_id.technician_id.user_id','=',False),('lab_id','=',False)]
             </field>
             <field name="groups"
-                   eval="[(4, ref('base_hospital_management.base_hospital_management_group_lab_assistant'))]"/>
+                   eval="[(4, ref('base_openemr.base_openemr_group_lab_assistant'))]"/>
         </record>
         <!--Multi company rule for patient lab test records-->
         <record id="patient_lab_test_rule_company" model="ir.rule">

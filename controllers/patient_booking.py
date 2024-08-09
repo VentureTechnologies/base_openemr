@@ -36,7 +36,7 @@ class PatientBooking(http.Controller):
             'date': fields.date.today()
         }
         return request.render(
-            "base_hospital_management.patient_booking_form", values)
+            "base_openemr.patient_booking_form", values)
 
     @http.route('/patient_booking/success', type='http',
                 website=True, csrf=False)

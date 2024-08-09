@@ -2,8 +2,8 @@
 <odoo>
     <!--    Hospital management menu-->
     <menuitem id="hospital_menu_root"
-              web_icon="base_hospital_management,static/description/icon.png"
-              groups="base_hospital_management.base_hospital_management_group_lab_assistant,base_hospital_management.base_hospital_management_group_pharmacist,base_hospital_management.base_hospital_management_group_nurse,base_hospital_management.base_hospital_management_group_doctor,base_hospital_management.base_hospital_management_group_receptionist,base_hospital_management.base_hospital_management_group_manager"
+              web_icon="base_openemr,static/description/icon.png"
+              groups="base_openemr.base_openemr_group_lab_assistant,base_openemr.base_openemr_group_pharmacist,base_openemr.base_openemr_group_nurse,base_openemr.base_openemr_group_doctor,base_openemr.base_openemr_group_receptionist,base_openemr.base_openemr_group_manager"
               name="Hospital Management"/>
     <!--    Appointment menu-->
     <menuitem id="hospital_menu_appointment" name="Appointment"
@@ -19,13 +19,13 @@
               sequence="3"/>
     <!--    Infrastructure menu-->
     <menuitem id="hospital_menu_infrastructure" name="Infrastructure"
-              groups="base_hospital_management.base_hospital_management_group_manager"
+              groups="base_openemr.base_openemr_group_manager"
               parent="hospital_menu_root" sequence="4"/>
     <menuitem name="Report" id="hospital_report" parent="hospital_menu_root"
               sequence="6"/>
     <!--    Configuration menu-->
     <menuitem id="hospital_menu_configuration" name="Configuration" sequence="6"
-              groups="base_hospital_management.base_hospital_management_group_manager"
+              groups="base_openemr.base_openemr_group_manager"
               parent="hospital_menu_root"/>
     <!--Reception dashboard action-->
     <record id="reception_dashboard_action" model="ir.actions.client">
@@ -35,7 +35,7 @@
     <!--Reception dashboard menu-->
     <menuitem name="Dashboard" id="reception_dashboard_menu"
               parent="hospital_menu_root" sequence="0"
-              groups="base_hospital_management.base_hospital_management_group_receptionist"
+              groups="base_openemr.base_openemr_group_receptionist"
               action="reception_dashboard_action"/>
     <!--Lab dashboard action-->
     <record id="lab_dashboard_action" model="ir.actions.client">
@@ -45,7 +45,7 @@
     <!--Lab dashboard menu-->
     <menuitem id="lab_dashboard_menu" name="Dashboard"
               parent="hospital_menu_root" sequence="0"
-              groups="base_hospital_management.base_hospital_management_group_lab_assistant"
+              groups="base_openemr.base_openemr_group_lab_assistant"
               action="lab_dashboard_action"/>
     <!--    Pharmacist dashboard action-->
     <record id="pharmacist_dashboard_action" model="ir.actions.client">
@@ -55,7 +55,7 @@
     <!--    Pharmacist dashboard menu-->
     <menuitem id="pharma_dashboard_menu" name="Dashboard"
               parent="hospital_menu_root" sequence="0"
-              groups="base_hospital_management.base_hospital_management_group_pharmacist"
+              groups="base_openemr.base_openemr_group_pharmacist"
               action="pharmacist_dashboard_action"/>
     <!--    Doctor dashboard action-->
     <record id="doctor_dashboard_action" model="ir.actions.client">
@@ -65,6 +65,6 @@
     <!--    Doctor dashboard menu-->
     <menuitem id="doctor_dashboard_menu" name="Dashboard"
               parent="hospital_menu_root" sequence="0"
-              groups="base_hospital_management.base_hospital_management_group_doctor"
+              groups="base_openemr.base_openemr_group_doctor"
               action="doctor_dashboard_action"/>
 </odoo>

@@ -305,4 +305,4 @@ class PatientLabTest(models.Model):
             'doctor_name': self.test_id.doctor_id.name
         }
         return self.env.ref(
-            'base_hospital_management.action_report_patient_lab_tests').report_action(self, data=data)
+            'base_openemr.action_report_patient_lab_tests').report_action(self, data=data)
