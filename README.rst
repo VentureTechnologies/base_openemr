@@ -17,7 +17,7 @@ Affero General Public License, Version 3 (AGPL v3).
 
 Company
 -------
-* `Cybrosys Techno Solutions <https://venturetech.site/>`__
+* `Venture Technologies <https://venturetech.site/>`__
 
 Credits
 -------
