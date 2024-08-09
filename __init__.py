@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ################################################################################
 #
-#    Cybrosys Technologies Pvt. Ltd.
+#    Venture Technologies, LLC
 #
-#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-#    Author: Subina P (odoo@cybrosys.com)
+#    Copyright (C) 2024-TODAY Venture Technologies(<https://www.venturetech.site>).
+#    Author: Jose Artavia (jartavia@venturetech.site)
 #
 #    You can modify it under the terms of the GNU AFFERO
 #    GENERAL PUBLIC LICENSE (AGPL v3), Version 3.
