@@ -3,7 +3,7 @@
 #
 #    Venture Technologies, LLC
 #
-#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.venturetech.site>).
+#    Copyright (C) 2024-TODAY Venture Technologies(<https://www.venturetech.site>).
 #    Author: Subina P (odoo@venturetech.site)
 #
 #    You can modify it under the terms of the GNU AFFERO
