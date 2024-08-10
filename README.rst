@@ -21,7 +21,7 @@ Company
 
 Credits
 -------
-* Developer:(V17) Subina,
+* Developer:(V17) jartavia05,
   Contact: odoo@venturetech.site
 
 Contacts
@@ -38,7 +38,7 @@ Maintainer
 .. image:: https://venturetech.site/images/logo.png
    :target: https://venturetech.site
 
-This module is maintained by Cybrosys Technologies.
+This module is maintained by Venture Technologies.
 
 For support and more information, please visit `Our Website <https://venturetech.site/>`__
 
