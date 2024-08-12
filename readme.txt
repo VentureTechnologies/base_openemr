@@ -1,9 +1,40 @@
-Date: 01/04/2024 | Version: 17.0.0.1
-	Fixed: Fixed Bad Query error.
-	Fixed: Fixed create method error.
-	Fixed: Fixed warnings.
+.. image:: https://img.shields.io/badge/license-AGPL--3-blue.svg
+    :target: https://www.gnu.org/licenses/agpl-3.0-standalone.html
+    :alt: License: AGPL-3
+
+OpenEMR Odoo 17
+===========================
+This Module helps to manage day to day activities of a hospital.
 
 
-17.0.0.2 ==> Fixed mention issue of when medicament create from prescription order line at that time trace back occur.
-	
-	
+License
+-------
+Affero General Public License, Version 3 (AGPL v3).
+(https://www.gnu.org/licenses/lgpl-3.0-standalone.html)
+
+Company
+-------
+* `Venture Technologies <https://venturetech.site/>`__
+
+Credits
+-------
+* Developer:(V17) Jose Artavia,
+  Contact: jartavia@venturetech.site
+
+Contacts
+--------
+* Mail Contact : info@venturetech.site
+* Website : https://venturetech.site
+
+Bug Tracker
+-----------
+Bugs are tracked on GitHub Issues. In case of trouble, please check there if your issue has already been reported.
+
+Maintainer
+==========
+.. image:: https://venturetech.site/images/logo.png
+   :target: https://venturetech.site
+
+This module is maintained by Venture Technologies.
+
+For support and more information, please visit `Our Website <https://venturetech.site/>`__
