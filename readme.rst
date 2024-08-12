@@ -24,7 +24,7 @@ Credits
 Contacts
 --------
 * Mail Contact : info@venturetech.site
-* Website : https://venturetech.site
+* Website : https://www.venturetech.site
 
 Bug Tracker
 -----------
@@ -32,9 +32,9 @@ Bugs are tracked on GitHub Issues. In case of trouble, please check there if you
 
 Maintainer
 ==========
-.. image:: https://venturetech.site/images/logo.png
-   :target: https://venturetech.site
+.. image:: https://www.venturetech.site/images/logo.png
+   :target: https://www.venturetech.site
 
 This module is maintained by Venture Technologies.
 
-For support and more information, please visit `Our Website <https://venturetech.site/>`__
+For support and more information, please visit `Our Website <https://www.venturetech.site/>`__
