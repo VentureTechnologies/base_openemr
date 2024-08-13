@@ -2,7 +2,7 @@
     :target: https://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 
-OpenEMR Odoo 17
+Fisiotime EMR
 ===========================
 This Module helps to manage day to day activities of a hospital.
 
