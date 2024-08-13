@@ -2,7 +2,7 @@
 <openerp>                 
         <menuitem 
         	id="main_menu_hospital_management"
-        	name="Hospital Management"
+        	name="Fisiotime EMR"
             web_icon="base_openemr,static/description/icon.png"
            />
 

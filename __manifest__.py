@@ -3,7 +3,7 @@
 
 {
 
-    "name": "Open EMR for Odoo",
+    "name": "Fisiotime EMR",
     "version": "17.0.0.1",
     "currency": 'USD',
     "summary": "Apps basic Hospital Management system Healthcare Management Clinic Management apps manage clinic manage Patient hospital manage Healthcare system Patient Management Hospital Management Healthcare Management Clinic Management hospital Lab Test Request",
