@@ -1,1587 +1,426 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odoo App 3 Index</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
-</head>
-<body>
-<section>
-    <div class="container"
-         style="font-family: 'Inter', sans-serif !important;background-color: #fff !important;">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between flex-wrap align-items-sm-center"
-                 style="border-bottom:1px solid rgba(0, 0, 0, 0.22)">
-                <div class="my-3">
-                    <img src="assets/misc/Cybrosys R.png"
-                         style="width:auto !important; height:40px !important">
-                </div>
-                <div class="my-3 d-flex align-items-center">
-                    <div class="text-center"
-                         style="background-color:#017E84 !important;font-size: 0.8rem !important; color:#fff !important; font-weight:500 !important; padding:4px !important; margin:0 3px !important; border-radius:50px !important; min-width: 120px !important;">
-                        Community
-                    </div>
-                     <div class="text-center"
-                         style="background-color:#875A7B !important; color:#fff !important;font-size: 0.8rem !important; font-weight:500 !important; padding:4px !important; margin:0 3px !important; border-radius:50px !important;min-width: 120px !important;">
-                        Enterprise
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 text-center d-flex align-items-center flex-column"
-                 style="margin: 80px 0px !important;">
-                <h1 style="font-size: 2.8rem;font-weight: 700; color:
-                    #1A202C;">
-                     Hospital Management Odoo 17</h1>
-                <p class="my-3 mb-4"
-                   style="max-width: 80%; font-weight: 400 !important; line-height: 32px; color: #718096;">
-                    This Module Helps to Manage Patients Records, Doctors Details,
-                    Lab Management , Employee Management etc. And there is Dashboard
-                    Created under the module that help to Analyze Services like Patient Details,
-                    Lab Details, Test Details Doctor's Allocations
-                </p>
-                <div style="width: 80%; margin-top: 3rem;">
-                    <img src="assets/screenshots/hero.gif"
-                         class="img-responsive" width="100%" height="auto">
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5 mb-5">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
-                <p class="m-0"
-                   style="font-weight: 600; font-size: 24px; color:#714b67 !important">
-                    Key Highlights
-                </p>
-            </div>
-            <div class="row py-4">
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Dashboard Services</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                              Patient Management</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Laboratory Management</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Stock Management System</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Blood Bank Management</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Vaccination Management</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Doctor's Allocation and Service Management</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                              Other Amenities</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                             Medicine and Related Product Management</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-6 col-sm-12 p-3">
-                    <div class="d-flex   h-100" style="padding: 30px;border-radius: 12px;
-                                    background: #FFF;
-                                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.25); ">
-                        <div style="width: 36px; height: 36px; border-radius: 50%; background: #714B67;
-                                    display: flex; justify-content: center; align-items: center;
-                                    margin-right: 10px; flex-shrink: 0;">
-                            <i class="fa-solid fa-star  "
-                               style="color: #fff;font-size:14px;"></i>
-                        </div>
-                        <div>
-                            <p style="color: #1A202C;font-weight: 600;
-                                      font-size: 1.2rem; margin-bottom: 2px;">
-                               Online Booking </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container rounded">
-            <ul class="nav nav-tabs d-flex"
-                style="width: fit-content;margin: 0 auto;gap: 1rem;">
-                <li class="col text-center py-2 text-nowrap "
-                    style="color: #fff; background-color: #714B67;border-radius: 6px 6px 0px 0px;">
-                    <a
-                            class="active show" data-toggle="tab" href="#tab1"
-                            style="color: #fff;font-weight: 500; background-color: #714B67; text-decoration: none;">
-                        <i class="fa-regular fa-image  pr-2"
-                           style="color: #fff;"></i>
-                        Screenshots</a></li>
-                <li class="col text-center py-2 text-nowrap "
-                    style="color: #fff; background-color: #714B67;border-radius: 6px 6px 0px 0px;">
-                    <a
-                            data-toggle="tab" href="#tab2"
-                            style="color: #fff;font-weight: 500;  text-decoration: none;"><i
-                            class="fa-solid fa-star  pr-2"
-                            style="color: #fff;"></i>Features</a></li>
-                <li class="col text-center py-2 text-nowrap "
-                    style="color: #fff; background-color: #714B67;border-radius: 6px 6px 0px 0px;">
-                    <a
-                            data-toggle="tab" href="#tab3"
-                            style="color: #fff;font-weight: 500; text-decoration: none; background-color: #714B67;"><i
-                            class="fa-solid fa-book-open  pr-2"
-                            style="color: #fff;"></i>Released Notes</a></li>
-            </ul>
-            <div class="tab-content"
-                 style="background-color: rgba(121, 113, 119, 0.04);">
-                <div id="tab1" class="tab-pane fade in active show">
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px; background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h1.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Give the user access to the user group Manager.</h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h2.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                     Add Staff
-                                 </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                  Navigate to Staff menu under Configuration.
-                                    Add the Job Position. Also add Consultation
-                                    Type, Average Time for a Patient and
-                                    Consultation Charge for Doctors.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h3.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Add Pharmacy
-                                   </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h4.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Add Medicine
-                                   </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h5.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Add Vaccine
-                                   </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h6.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Add Rooms
-                                   </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h7.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Add Lab test
-                                   </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h8.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Add Doctor Allocation
-                                </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h9.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                     Give the user access to the user group Doctor.
-                                    </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h10.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                  </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                     Doctor's Dashboard.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h11.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                   </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                     Create Patient
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h12.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                    Download patient card here
-                                </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h14.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                    Create Inpatient here
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h15.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                 Give the user access to the user group Nurse.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h16.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                     Can change the stage into Admitted by
-                                     clicking on the button Admit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h17.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h19.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                 <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h20.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h21.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h22.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h23.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                   Give the user access to the user group Lab Assistant.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h24.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Lab Assistant Dashboard.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h25.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Confirm the test on clicking the Confirm button
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h26.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Process tests
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h27.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h28.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h29.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h30.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Published tests
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h31.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                   Give the user access to the user group Pharmacist.
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h32.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Pharmacist Dashboard
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h33.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h34.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h35.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h36.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                  Give the user access to receptionist dashboard.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h37.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Receptionist Dashboard
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h38.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h39.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h40.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h41.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h42.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h43.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                      Patient booking through website.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h44.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 py-2"
-                         style="padding: 1rem 4rem !important;">
-                        <div
-                                style="border: 1px solid #d8d6d6; border-radius: 4px;  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="row justify-content-center p-3 w-100 m-0">
-                                <img src="assets/screenshots/h45.png"
-                                     class="img-responsive" width="100%"
-                                     height="auto">
-                            </div>
-                            <div class="px-3">
-                                <h4 class="mt-2"
-                                    style=" font-weight:600 !important; color:#282F33 !important; font-size:1.3rem !important">
-                                </h4>
-                                  <p style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab2" class="tab-pane fade">
-                    <div class="col-mg-12" style="padding: 1rem 4rem;">
-                        <ul style="list-style: none; padding: 1rem 0;font-weight: 500;">
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Dashboard Services
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Patient Management
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Laboratory Management
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Stock Management System
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Blood Bank Management
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Vaccination Management
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Doctor's Allocation and Service Management
-                            </li>
-                            <li class="py-3"
-                                style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <span style="margin-right: 12px;"><img
-                                            src="assets/misc/star (1) 2.svg"
-                                            alt=""
-                                            width="16px"></span>
-                                Medicine and Related Product Management
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="tab3" class="tab-pane fade">
-                    <div class="col-mg-12 active" style="padding: 1rem 4rem;">
-                        <div class="py-3"
-                             style="font-weight: 500;background-color: #fff; border-radius: 4px; padding: 1rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                            <div class="d-flex mb-3"
-                                 style="font-size: 0.8rem; font-weight: 500;"><span>Version
-                                        17.0.1.0.0</span><span
-                                    class="px-2">|</span><span
-                                    style="color: #714B67;font-weight: 600;">Released on:29th February 2024</span>
-                            </div>
-                            <p class="m-0"
-                               style=" color:#718096!important; font-size:1rem !important;line-height: 28px;">
-                                Initial Commit for Hospital Management Odoo 17</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-5">
-                <p class="m-0"
-                   style="font-weight: 600; font-size: 24px; color:#000 !important">
-                    Related Products</p>
-            </div>
-        </div>
-        <div id="myCarousel" class="carousel slide py-3" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row p-4">
-                        <div class="col">
-                            <div class="p-3">
-                                <a href="https://apps.odoo.com/apps/modules/17.0/model_access_rights/"
-                                   style="color: #000; text-decoration: none;">
-                                    <div style="border:1px solid #CBCBCB !important;border-radius: 4px;">
-                                        <div style="width: 300px; ">
-                                            <img src="assets/modules/1.jpg"
-                                                 alt="" width="100%"
-                                                 height="auto">
-                                        </div>
-                                          <p class="text-center pt-2 text-black font-weight-bold">
-                                             HIDE CREATE|DELETE|ARCHIVE|EXPORT OPTIONS-MODEL WISE</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3">
-                                <a href="https://apps.odoo.com/apps/modules/17.0/statement_report/"
-                                   style="color: #000; text-decoration: none;">
-                                    <div style="border:1px solid #CBCBCB !important;border-radius: 4px;">
-                                        <div style="width: 300px; ">
-                                            <img src="assets/modules/2.jpg"
-                                                 alt="" width="100%"
-                                                 height="auto">
-                                        </div>
-                                         <p class="text-center pt-2 text-black font-weight-bold">
-                                             CUSTOMER/SUPPLIER PAYMENT STATEMENT REPORT</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3">
-                                <a href="https://apps.odoo.com/apps/modules/17.0/product_image_suggestion/"
-                                   style="color: #000; text-decoration: none;">
-                                    <div style="border:1px solid #CBCBCB !important;border-radius: 4px;">
-                                        <div style="width: 300px; ">
-                                            <img src="assets/modules/3.jpg"
-                                                 alt="" width="100%"
-                                                 height="auto">
-                                        </div>
-                                          <p class="text-center pt-2 text-black font-weight-bold">
-                                             PRODUCT IMAGE SUGGESTION</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row p-4">
-                        <div class="col">
-                            <div class="p-3">
-                                <a href="https://apps.odoo.com/apps/modules/17.0/magic_note/"
-                                   style="color: #000; text-decoration: none;">
-                                    <div style="border:1px solid #CBCBCB !important;border-radius: 4px;">
-                                        <div style="width: 300px; ">
-                                            <img src="assets/modules/4.jpg"
-                                                 alt="" width="100%"
-                                                 height="auto">
-                                        </div>
-                                        <p class="text-center pt-2 text-black font-weight-bold">
-                                             MAGIC NOTE</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3">
-                                <a href="https://apps.odoo.com/apps/modules/17.0/odoo_google_meet_integration/"
-                                   style="color: #000; text-decoration: none;">
-                                    <div style="border:1px solid #CBCBCB !important;border-radius: 4px;">
-                                        <div style="width: 300px; ">
-                                            <img src="assets/modules/5.jpg"
-                                                 alt="" width="100%"
-                                                 height="auto">
-                                        </div>
-                                         <p class="text-center pt-2 text-black font-weight-bold">
-                                             GOOGLE MEET CALENDAR INTEGRATION</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="p-3">
-                                <a href="https://apps.odoo.com/apps/modules/17.0/systray_world_clock/"
-                                   style="color: #000; text-decoration: none;">
-                                    <div style="border:1px solid #CBCBCB !important;border-radius: 4px;">
-                                        <div style="width: 300px;">
-                                            <img src="assets/modules/6.jpg"
-                                                 alt="" width="100%"
-                                                 height="auto">
-                                        </div>
-                                         <p class="text-center pt-2 text-black font-weight-bold">
-                                             SYSTRAY WORLD CLOCK</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel"
-               data-slide="prev" style="width: 35px; color: #000;">
-                    <span class="carousel-control-prev-icon">
-                        <i class="fa fa-chevron-left"
-                           style="font-size: 24px;"></i>
-                    </span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel"
-               data-slide="next" style="width: 35px; color: #000;">
-                    <span class="carousel-control-next-icon">
-                        <i class="fa fa-chevron-right"
-                           style="font-size: 24px;"></i>
-                    </span>
-            </a>
-        </div>
-        <div class="container mt-5">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
-                <p class="m-0"
-                   style="font-weight: 600; font-size: 24px; color:#000 !important">
-                    Our Services</p>
-
-            </div>
-        </div>
-        <div class="container my-5">
-            <div class="row py-3">
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative;border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#13EA36 ; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/cogs.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Customization</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative;border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#DBC711; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/wrench.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Implementation</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative; border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#FF6B6B ; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/lifebuoy.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Support</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative; border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#FFA801 ; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/user.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Hire
-                            Odoo Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative; border-radius: 4px;">
-
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#54A0FF; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/puzzle.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Integration</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative;border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#6D7680 ; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/update.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Migration</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative;border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#786FA6 ; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/consultation.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Consultancy</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;position: relative;border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#F8A5C2 ; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/training.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Implementation</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 px-4 py-4">
-                    <div
-                            style="background-color: #fff; padding: 25px; text-align: center;  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; position: relative;border-radius: 4px;">
-                        <div style="position: absolute; top: 0%; left: 50%; transform: translate(-50%, -50%);">
-                            <div style="background-color:#E6BE26; border-radius: 50%; padding: 15px;    width: 68px;
-                                    height: 68px; display: inline-block; box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);">
-                                <img src="assets/icons/license.png"
-                                     alt="service-icon" width="38px"
-                                     height="auto">
-                            </div>
-                        </div>
-                        <p style="margin-top: 20px; font-weight: bold;">Odoo
-                            Licensing Consultancy</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-4">
-                <p class="m-0"
-                   style="font-weight: 600; font-size: 24px; color:#000 !important">
-                    Our Industries</p>
-
-            </div>
-        </div>
-        <div class="container">
-            <div class="row my-5 py-4">
-                <div class="col-md-3 col-sm-6 p-0">
-                    <div class="d-flex flex-column h-100 "
-                         style="border-right: 1px solid rgb(209, 209, 209); border-bottom: 1px solid  rgb(209, 209, 209); padding: 30px; box-shadow: 6px 0 10px rgba(228, 227, 227, 0.373);">
-                        <img src="assets/icons/trading-black.png" width="42px"
-                             height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                           font-size: 1.2rem; margin-bottom: 2px;">Trading</p>
-                        <p>Easily procure and sell your products</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6  p-0">
-                    <div class="d-flex flex-column h-100"
-                         style="border-right: 1px solid rgb(209, 209, 209);border-bottom: 1px solid  rgb(209, 209, 209); padding: 30px;">
-                        <img src="assets/icons/pos-black.png" width="42px"
-                             height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">POS</p>
-                        <p>Easy configuration and convivial experience</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6  p-0">
-                    <div class="d-flex flex-column h-100"
-                         style="border-right: 1px solid  rgb(209, 209, 209);border-bottom: 1px solid   rgba(0, 0, 0, 0.2); padding: 30px; box-shadow: 0 5px 10px  rgba(228, 227, 227, 0.373)">
-                        <img src="assets/icons/education-black.png" width="42px"
-                             height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">
-                            Education</p>
-                        <p>A platform for educational management</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6  p-0">
-                    <div class="d-flex flex-column h-100"
-                         style="border-bottom: 1px solid  rgb(209, 209, 209); padding: 30px; ">
-                        <img src="assets/icons/manufacturing-black.png"
-                             width="42px" height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">
-                            Manufacturing</p>
-                        <p>Plan, track and schedule your operations</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 p-0">
-                    <div class="d-flex flex-column h-100"
-                         style="border-right: 1px solid  rgb(209, 209, 209); padding: 30px;">
-                        <img src="assets/icons/ecom-black.png" width="42px"
-                             height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">E-commerce &
-                            Website</p>
-                        <p>Mobile friendly, awe-inspiring product pages</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6   p-0">
-                    <div class="d-flex flex-column h-100"
-                         style="border-right: 1px solid  rgb(209, 209, 209); padding: 30px;box-shadow: 0 -5px 10px  rgba(228, 227, 227, 0.373);">
-                        <img src="assets/icons/service-black.png" width="42px"
-                             height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">Service
-                            Management</p>
-                        <p>Keep track of services and invoice</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6    p-0">
-                    <div class="d-flex flex-column h-100"
-                         style="border-right: 1px solid  rgb(209, 209, 209); padding: 30px; ">
-                        <img src="assets/icons/restaurant-black.png"
-                             width="42px" height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">
-                            Restaurant</p>
-                        <p>Run your bar or restaurant methodically</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6   p-0">
-                    <div class="d-flex flex-column h-100"
-                         style=" padding: 30px;box-shadow: -5px 0 10px  rgba(228, 227, 227, 0.373);">
-                        <img src="assets/icons/hotel-black.png" width="42px"
-                             height="auto" alt="">
-                        <p style="color: #714B67;font-weight: 600; margin-top: 10px;
-                            font-size: 1.2rem; margin-bottom: 2px;">Hotel
-                            Management</p>
-                        <p>An all-inclusive hotel management application</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center mt-5">
-                <p class="m-0"
-                   style="font-weight: 600; font-size: 24px; color:#000 !important">
-                    Support</p>
-            </div>
-        </div>
-        <div class="container my-5">
-            <div class="row" style="background-color: #FFFAFE;">
-                <div class="col-md-6 pb-4  d-flex align-items-center justify-content-center"
-                     style="border-right: 1px solid #D9D9D9;">
-                    <div style="padding: 30px;">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/misc/support (1) 1.svg" alt=""
-                                 width="60px" style="margin-right: 12px;">
-                            <div style="padding: 0px 8px;">
-                                    <span
-                                            style="color: #714B67;font-size: 24px;font-weight: 600;padding-bottom: 1rem;">Need
-                                        Help?</span>
-                                <p class="m-0" style="color:#718096;">Got
-                                    questions or need help? Get in touch.</p>
-                                <div style="font-weight: 400;"><span><img
-                                        src="assets/misc/support-email.svg"
-                                        alt=""
-                                        width="18px"
-                                        style="filter: invert(1);margin-right: 0.8rem;"></span>odoo@cybrosys.com
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 pb-4 d-flex align-items-center justify-content-center">
-                    <div style="padding: 30px;">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/misc/whatsapp 1.svg" alt=""
-                                 width="60px" style="margin-right: 12px;">
-                            <div>
-                                <span style="color: #714B67;font-size: 24px;font-weight: 600;">WhatsApp</span>
-                                <p class="m-0" style="color:#718096;">Say hi to
-                                    us on WhatsApp!</p>
-                                <div style="font-weight: 400; font-size: 16px;"><span><img
-                                        src="assets/misc/phone.svg"
-                                        alt="" width="14px"
-                                        style="filter: invert(1); margin-right: 0.8rem;"></span>+91
-                                    99456767686
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="oe_container lead mt64">
+	<div>
+		<div class="col-md-12 mt16" style="padding:0;">
+			<div class="col-md-12" style="padding:0;">
+				<div class="panel-group mb0 mt0" role="tablist" id="priceAccordeon" style="padding:0;">
+					<div class="panel-heading mb0 mt0 collapsed" role="tab" data-toggle="collapse" data-parent="#priceAccordeon" data-target="#priceAccordeon_area" aria-expanded="false" style="margin-left:0;padding:0 0 2px 0;text-align:right;">
+						<strong>
+							<div style="background-color:#875A7B;color:white;padding:5px;margin-bottom:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+								<strong style="color:white;">
+									Supported :
+								</strong>
+							</div>
+							<div style="background-color:#875A7B;color:white;padding:5px;margin-bottom:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+								<strong style="color:white;" title="The tool is compatible with the Odoo Enterprise version">
+									<i class="fa fa-check" style="margin-left:4px;"> </i>
+									Enterprise
+								</strong>
+							</div>
+							<div style="background-color:#875A7B;padding:5px;margin-top:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+								<strong style="color:white;" title="The tool is compatible with the Odoo Community version">
+									<i class="fa fa-check" style="margin-left:4px;"> </i>
+									Community
+								</strong>
+							</div>
+							<div style="background-color:#875A7B;color:white;padding:5px;margin-bottom:3px;text-align:center;border-radius:5px;white-space:nowrap;display: inline-block;">
+								<strong style="color:white;" title="The tool might be installed to Odoo.sh if you have a linked private git repository">
+									<i class="fa fa-check" style="margin-left:4px;"> </i>
+									Odoo.sh
+								</strong>
+							</div>
+						</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+<section class="oe_container lead bi_title_box">
+	<div>
+		<div>
+			<h2 class="oe_slogan bi_title" style="color:#5082c4;">
+				<b>Basic Hospital Management System Odoo Apps</b>
+			</h2>
+			<p>
+				This Odoo Apps helps to manage day to day activities of hospital and clinic which can be helpful for any Hospital and medical facilities. This module helps to manage Patient details,Doctors details, Patient Appointment, Prescription, Patient Hospitalization etc
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead bi_features">
+	<div>
+		<div>
+			<h3 class="oe_slogan"
+				style="opacity:1;background: linear-gradient(to right, #86bcf2 0%, #e2f2f8 100%);padding: 10px 0px;color: ##201111;letter-spacing: 0.2em;text-transform: uppercase;text-shadow: 0.1em .04em 0.1em #7d8c88;">
+				<b>Features</b></h3>
+		</div>
+	
+		<div class="row">
+			<div class="col" style="margin: 10px;">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="img img-responsive" style="max-width:100%;" src="features/1fet.png"/>
+					</div>
+					<div class="col-md-9">
+					  <h4><b>Manage Patient Details.</b></h4>
+					  <span class="oe_slogan">The Patient can enter their details.There are tabs will shows patient details like medicament, diseases, lab test, etc.</span>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="margin: 10px;">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="img img-responsive" style="max-width:100%;" src="features/2fet.png"/>
+					</div>
+					<div class="col-md-9">
+						<h4><b>Receptionist can create Appointment.</b></h4>
+						<span class="oe_slogan">Receptionist can create appointment with the details like physician , consultation service etc.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" style="margin: 10px;">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="img img-responsive" style="max-width:100%;" src="features/3fet.jpeg"/>
+					</div>
+					<div class="col-md-9">
+					  <h4><b>Patient Hospitalization Details.</b></h4>
+					  <span class="oe_slogan">Help administrative department to save the details of patient about his/her hospitalization like bed details, hospitalization date & expected discharge date, and other.</span>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="margin: 10px;">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="img img-responsive" style="max-width:100%;" src="features/4fet.png"/>
+					</div>
+					<div class="col-md-9">
+						<h4><b>Generate Patient's Prescriptions.</b></h4>
+						<span class="oe_slogan">Generate prescriptions with the doctor's and patient's details, can create invoice from prescription.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col" style="margin: 10px;">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="img img-responsive" style="max-width:100%;" src="features/5fet.png"/>
+					</div>
+					<div class="col-md-9">
+					  <h4><b>Lab Test Request and Result.</b></h4>
+					  <span class="oe_slogan">Patient can request for the lab test and can get the user of the lab test..</span>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="margin: 10px;">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="img img-responsive" style="max-width:100%;" src="features/6fet.jpeg"/>
+					</div>
+					<div class="col-md-9">
+						<h4><b>Generate Report for patient details, appointment, prescriptions, lab-test.</b></h4>
+						<span class="oe_slogan">Patient can generate the report for their details, appointment, prescriptions, lab-test.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="oe_container lead mt64">
+	<div>
+		<div class="oe_slogan oe_spaced text-center">
+			<a class="btn mt8 mr8" title="Demo Request" style="background-color: #2875aa;color: #FFFFFF !important;font-size: 20px;font-weight: bold;border-radius: 7px;" href="mailto:sales@Venture Technologies.in?Subject=Demo Request for Basic Hospital Management System Odoo Apps" target="_top"> Demo Request </a>
+			<a class="btn mt8 ml8" title="Video Tutorial"
+			   style="background-color: #2875aa;color: #FFFFFF !important;font-size: 20px;font-weight: bold;border-radius: 7px;"
+			   href="https://youtu.be/fk9dY53I9ow" target="_blank"> Video Tutorial</a>
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patients </p>
+			<p class="oe_slogan"> You can enter all the details of patients. All other tabs will show details about patients like medicaments, lab test details, etc... </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="1_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patient Card Report </p>
+			<p class="oe_slogan"> Report for Patient Card can be generated. </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="2_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patient Medication History Report </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="3_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patient Vaccinations History Report </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="4_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patient Disease Summary Report </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="5_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Appointments </p>
+			<p class="oe_slogan"> In Hospital Management > Appointments menu the user can create a new appointment, view and manage an appointment.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="6_base_openemr.png">
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="7_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Appointments Invoice </p>
+			<p class="oe_slogan"> Users can create an invoice for an appointment by clicking the "CREATE INVOICE" button. </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="8_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Prescriptions </p>
+			<p class="oe_slogan"> Prescription is feature where after diagnosis of the patient, you can enter the details of prescripted medicaments, its dosage and other details.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="9_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Prescription Invoice </p>
+			<p class="oe_slogan"> Users can create an invoice for a prescription by clicking the "CREATE INVOICE" button.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="10_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Prescription Report </p>
+			<p class="oe_slogan"> Reports for Prescription can be generated.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="11_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patient Hospitalization </p>
+			<p class="oe_slogan"> In Hospital Management > Inpatient Administration > Patient Hospitalization menu users can create patient hospitalization and enter detail about his/her hospitalization, patient's bed details, hospitalization date & expected discharge date, and other details and click the "CONFIRM REGISTRATION" button.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="12_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Patient Admission </p>
+			<p class="oe_slogan"> On clicking the "PATIENT ADMISSION" button user can see the patient admitted and the state changed to "Hospitalized" from confirmed.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="13_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Discharge Patient </p>
+			<p class="oe_slogan"> Users can see beds added to a patient hospitalized, User also can discharge a patient by clicking the "DISCHARGE PATIENT" button.</p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="14_base_openemr.png">
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="15_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Lab Requests </p>
+			<p class="oe_slogan"> In Hospital Management > Laboratory > Draft Lab Request menu users can create lab requests. </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="16_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Lab Tests Results </p>
+			<p class="oe_slogan"> In Hospital Management > Laboratory > Lab Test Result menu users can create test results, Also by clicking the "CREATE LAB TEST" button and enter test cases. </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="17_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Lab Tests Invoice </p>
+			<p class="oe_slogan"> Users can create lab test invoice by clicking the "CREATE LAB INVOICE" button. </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="18_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div>
+		<div>
+			<p class="oe_slogan" style="color: #49a3fe;font-size: 35px;font-style: italic;font-weight:bolder;"> Laboratory Report </p>
+			<img class="img-border img-responsive thumbnail mb16" style="border: 3px solid black;" src="19_base_openemr.png">
+		</div>
+	</div>
+</section>
+
+<section class="oe_container oe_dark" style="min-width: 110%;margin-left: -5%;">
+	<div>
+		<div class="row">
+			<div class="col-sm-4" style="margin: auto;">
+				<p class="oe_slogan" style="font-size: 35px;color: #5082c4;font-style: italic;font-weight: bold;">Apps May You Like</p>
+			</div>
+		</div>
+		<div class="row col-sm-12" style="margin-left: 1%;padding: 1% 8%;">
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/insurance_management/">
+					<img class="img img-responsive" src="related/insurance_management.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/bi_warranty_registration/">
+					<img class="img img-responsive" src="related/bi_warranty_registration.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/hospital_management/">
+					<img class="img img-responsive" src="related/hospital_management.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/bi_car_repair_management/">
+					<img class="img img-responsive" src="related/bi_car_repair_management.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/pathology_management/">
+					<img class="img img-responsive" src="related/pathology_management.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/bi_veterinary_management/">
+					<img class="img img-responsive" src="related/bi_veterinary_management.png" style="width: 100%;"/>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="oe_container oe_dark" style="min-width: 110%;margin-left: -5%;">
+	<div>
+		<div class="row">
+			<div class="col-sm-4" style="margin: auto;">
+				<p class="oe_slogan" style="font-size: 35px;color: #5082c4;font-style: italic;font-weight: bold;">Most Demanded Apps</p>
+			</div>
+		</div>
+		<div class="row col-sm-12" style="margin-left: 1%;padding: 1% 8%;">
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/pos_orders_all/">
+					<img class="img img-responsive" src="demanded/all_in_one_pos.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/bi_customer_overdue_statement/">
+					<img class="img img-responsive" src="demanded/customer_overdue.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/generic_excel_reports/">
+					<img class="img img-responsive" src="demanded/generic_excel_reports.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/sales_commission_generic/">
+					<img class="img img-responsive" src="demanded/sale_commision.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/bi_generic_import/">
+					<img class="img img-responsive" src="demanded/bi_generic_import.png" style="width: 100%;"/>
+				</a>
+			</div>
+			<div class="col-sm-4" style="padding: 5px;padding-right: 10px;">
+				<a href="https://apps.odoo.com/apps/modules/16.0/branch/">
+					<img class="img img-responsive" src="demanded/branch.png" style="width: 100%;"/>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="oe_container">
+	<div >
+		<div >
+			<h2 class="oe_slogan">Free Support</h2>
+			<h3 class="oe_slogan" style="font-size: 21px; color: #000000 !important;">You will get 90 Days free support incase any bugs or issue (Except data recovery).</h3>
+			<p class="oe_slogan" style="font-size: 18px; ">
+		At Venture Technologies we offer  end to end solution for Odoo services. Which includes analysis &amp; consultation on the workflows and integration part.  Please note that You're not allowed to distribute this module after purchase! Incase of any question regarding this module feel free to email us on <a href="mailto:ticket@Venture Technologies.in">ticket@Venture Technologies.in</a> or raise a ticket on support.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="oe_container lead">
+	<div >
+		<div >
+			<div class="img img-responsive text-center">
+				<a href="https://www.venturetech.site" target="new" style="display: grid;">
+					<img src="bi_logo.png" style="margin: auto;max-width: 350px;">
+				</a>
+			</div>
+		</div>
+		<div class="oe_slogan oe_spaced text-center">
+			<a class="btn mt8" title="Query and Demo" style="background-color: #3497db;color: #FFFFFF !important;font-size: 20px;font-weight: bold;" href="mailto:sales@Venture Technologies.in?Subject=Demo Request for Basic Hospital Management System Odoo Apps" target="_blank"> Query and Demo </a>
+			<a class="btn mt8" title="Email on Support" style="background-color: #3497db;color: #FFFFFF !important;font-size: 20px;font-weight: bold;" href="mailto:ticket@Venture Technologies.in?Subject=Support Request for Basic Hospital Management System Odoo Apps" target="_blank"> Support Request </a>
+		</div>
+	</div>
+</section>

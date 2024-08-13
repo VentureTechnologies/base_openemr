@@ -1,112 +1,105 @@
 # -*- coding: utf-8 -*-
-################################################################################
-#
-#    Venture Technologies, LLC.
-#
-#    Copyright (C) 2024-TODAY Venture Technologies, LLC.(<https://www.venturetech.site>).
-#    Author: Jose Artavia (jartavia@venturetech.site)
-#
-#    You can modify it under the terms of the GNU AFFERO
-#    GENERAL PUBLIC LICENSE (AGPL v3), Version 3.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU AFFERO GENERAL PUBLIC LICENSE (AGPL v3) for more details.
-#
-#    You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
-#    (AGPL v3) along with this program.
-#    If not, see <http://www.gnu.org/licenses/>.
-#
-################################################################################
+# Part of Venture Technologies. See LICENSE file for full copyright and licensing details.
+
 {
-    "name": "Open EMR Odoo 17",
-    "version": "17.0.1.0.0",
-    "category": "Services",
-    "summary": """This Module Helps to Manage Patients Records, Doctors Details,
-     Lab Management , Employee Management etc.""",
-    "description": """The hospital management module can be used to handle 
-     the day-to-day activities of the hospital. Managing patient scheduling, 
-     making patient ID cards, creating patient lab test results, and adding 
-     doctors, patients, prescriptions, vaccines, etc. are all made easier 
-     with the help of this module. This app offers a different dashboards for 
-     different users.""",
-    "author": "Venture Technologies",
-    "company": "Venture Technologies",
-    "maintainer": "Venture Technologies",
-    "website": "https://www.venturetech.site",
-    "depends": ["website", "hr", "stock", "sale_management"],
+
+    "name": "Fisiotime EMR",
+    "version": "17.0.0.1",
+    "currency": 'USD',
+    "summary": "Apps basic Hospital Management system Healthcare Management Clinic Management apps manage clinic manage Patient hospital manage Healthcare system Patient Management Hospital Management Healthcare Management Clinic Management hospital Lab Test Request",
+    "category": "Industry",
+    "description": """
+    Venture Technologies developed a new odoo/OpenERP module apps
+    This module is used to manage Hospital and Healthcare Management and Clinic Management apps. 
+    manage clinic manage Patient hospital in odoo manage Healthcare system Patient Management, 
+    Odoo Hospital Management odoo Healthcare Management Odoo Clinic Management
+    Odoo hospital Patients
+    Odoo Healthcare Patients Card Report
+    Odoo Healthcare Patients Medication History Report
+    Odoo Healthcare Appointments
+    Odoo hospital Appointments Invoice
+    Odoo Healthcare Families Prescriptions Healthcare Prescriptions
+    Odoo Healthcare Create Invoice from Prescriptions odoo hospital Prescription Report
+    Odoo Healthcare Patient Hospitalization
+    odoo Hospital Management System
+    Odoo Healthcare Management System
+    Odoo Clinic Management System
+    Odoo Appointment Management System
+    health care management system
+    Generate Report for patient details, appointment, prescriptions, lab-test
+
+    Odoo Lab Test Request and Result
+    Odoo Patient Hospitalization details
+    Generate Patient's Prescriptions
+
+    
+""",
+
+    "depends": ["base", "sale_management", "stock", "account"],
     "data": [
-        "security/base_openemr_groups.xml",
-        "security/doctor_allocation_security.xml",
-        "security/doctor_slot_security.xml",
-        "security/patient_lab_test_security.xml",
-        "security/ir.model.access.csv",
-        "data/ir_sequence_data.xml",
-        "data/ir_cron_data.xml",
-        "data/website_data.xml",
-        "views/menu_views.xml",
-        "views/inpatient_surgery_views.xml",
-        "views/hospital_bed_views.xml",
-        "views/blood_bank_views.xml",
-        "views/contra_indication_views.xml",
-        "views/booking_success_templates.xml",
-        "views/hospital_building_views.xml",
-        "views/hospital_degree_views.xml",
-        "views/doctor_allocation_views.xml",
-        "views/hr_employee_views.xml",
-        "views/hospital_inpatient_views.xml",
-        "views/hospital_insurance_views.xml",
-        "views/hospital_laboratory_views.xml",
-        "views/patient_lab_test_views.xml",
-        "views/lab_test_views.xml",
-        "views/lab_test_result_views.xml",
-        "views/medicine_brand_views.xml",
-        "views/menu_views.xml",
-        "views/hospital_outpatient_views.xml",
-        "views/res_partner_views.xml",
-        "views/patient_portal_templates.xml",
-        "views/hospital_vaccination_views.xml",
-        "views/product_template_views.xml",
-        "views/room_facility_views.xml",
-        "views/patient_card_templates.xml",
-        "views/booking_success_templates.xml",
-        "views/doctor_specialization_views.xml",
-        "views/hospital_pharmacy_views.xml",
-        "views/hospital_ward_views.xml",
-        "views/patient_booking_templates.xml",
-        "views/patient_room_views.xml",
-        "views/lab_test_line_views.xml",
-        "report/res_partner_reports.xml",
-        "report/lab_test_line_reports.xml",
+        'security/hospital_groups.xml',
+        'security/ir.model.access.csv',
+        'data/ir_sequence_data.xml',
+        'views/assets.xml',
+        'views/login_page.xml',
+        'views/main_menu_file.xml',
+        'wizard/medical_appointments_invoice_wizard.xml',
+        'wizard/create_prescription_invoice_wizard.xml',
+        'wizard/create_prescription_shipment_wizard.xml',
+        'views/medical_medicament.xml',
+        'views/medical_drug_route.xml',
+        'wizard/medical_lab_test_create_wizard.xml',
+        'wizard/medical_lab_test_invoice_wizard.xml',
+        'views/medical_prescription_order.xml',
+        'views/medical_directions.xml',
+        'views/medical_dose_unit.xml',
+        'views/medical_patient_evaluation.xml',
+        'views/medical_family_disease.xml',
+        'views/medical_inpatient_registration.xml',
+        'views/medical_inpatient_medication.xml',
+        'views/medical_insurance_plan.xml',
+        'views/medical_appointment.xml',
+        'views/medical_insurance.xml',
+        'views/medical_patient_lab_test.xml',
+        'views/medical_lab_test_units.xml',
+        'views/medical_lab.xml',
+        'views/medical_neomatal_apgar.xml',
+        'views/medical_pathology_category.xml',
+        'views/medical_pathology_group.xml',
+        'views/medical_pathology.xml',
+        'views/medical_patient_disease.xml',
+        'views/medical_patient_medication.xml',
+        'views/medical_patient_medication1.xml',
+        'views/medical_patient_pregnancy.xml',
+        'views/medical_patient_prental_evolution.xml',
+        'views/medical_patient.xml',
+        'views/medical_physician.xml',
+        'views/medical_preinatal.xml',
+        'views/medical_prescription_line.xml',
+        'views/medical_puerperium_monitor.xml',
+        'views/medical_rcri.xml',
+        'views/medical_rounding_procedure.xml',
+        'views/medical_test_critearea.xml',
+        'views/medical_test_type.xml',
+        'views/medical_vaccination.xml',
+        'views/res_partner.xml',
+        'report/report_view.xml',
+        'report/appointment_recipts_report_template.xml',
+        'report/medical_view_report_document_lab.xml',
+        'report/medical_view_report_lab_result_demo_report.xml',
+        'report/newborn_card_report.xml',
+        'report/patient_card_report.xml',
+        'report/patient_diseases_document_report.xml',
+        'report/patient_medications_document_report.xml',
+        'report/patient_vaccinations_document_report.xml',
+        'report/prescription_demo_report.xml',
     ],
-    "demo": ["demo/hr_job_demo.xml"],
-    "assets": {
-        "web.assets_frontend": [
-            "base_openemr/static/src/js/prescription.js",
-            "base_openemr/static/src/js/website_page.js",
-        ],
-        "web.assets_backend": [
-            "base_openemr/static/src/css/doctor_dashboard.css",
-            "base_openemr/static/src/css/reception_dashboard.css",
-            "base_openemr/static/src/css/lab_dashboard.css",
-            "base_openemr/static/src/css/pharmacy_dashboard.css",
-            "base_openemr/static/src/xml/lab_dashboard_templates.xml",
-            "base_openemr/static/src/xml/doctor_dashboard_templates.xml",
-            "base_openemr/static/src/js/lab_dashboard.js",
-            "base_openemr/static/src/js/doctor_dashboard.js",
-            "base_openemr/static/src/xml/pharmacy_orderlines.xml",
-            "base_openemr/static/src/js/pharmacy_orderlines.js",
-            "base_openemr/static/src/xml/pharmacy_dashboard_templates.xml",
-            "base_openemr/static/src/js/pharmacy_dashboard.js",
-            "base_openemr/static/src/xml/reception_dashboard_templates.xml",
-            "base_openemr/static/src/js/reception_dashboard.js",
-        ],
-    },
-    "external_dependencies": {"python": ["python-barcode"]},
-    "images": ["static/description/banner.jpg"],
-    "license": "AGPL-3",
+    "author": "Venture Technologies",
+    "website": "https://www.venturetech.site",
     "installable": True,
-    "auto_install": False,
     "application": True,
+    "auto_install": False,
+    "images": ["static/description/Banner.gif"],
+    "license":'OPL-1',
+
 }
