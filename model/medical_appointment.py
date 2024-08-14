@@ -129,7 +129,7 @@ class medical_appointment(models.Model):
 				if res:
 					result['domain'] = "[('id','=',%s)]" % res.id
 		else:
-			 raise UserError(_(' The Visit is invoice exempt'))
+			raise UserError(_(' The Visit is invoice exempt'))
 		return result
 
 	
