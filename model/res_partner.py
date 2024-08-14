@@ -17,6 +17,7 @@ class res_partner(models.Model):
     is_institution = fields.Boolean('Institution')
     company_insurance_ids = fields.One2many('medical.insurance','insurance_compnay_id','Insurance')
     reference = fields.Char('ID Number')
+    
 
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

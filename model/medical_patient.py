@@ -36,7 +36,7 @@ class medical_patient(models.Model):
                 rec.age = "No Date Of Birth!!"
 
     patient_id = fields.Many2one('res.partner',domain=[('is_patient','=',True)],string="Patient", required= True)
-    name = fields.Char(string='Id', readonly=True)
+    name = fields.Char(string='Identification', required=True)
     last_name = fields.Char('Last name')
     date_of_birth = fields.Date(string="Date of Birth")
     sex = fields.Selection([('m', 'Male'),('f', 'Female')], string ="Sex")
@@ -288,14 +288,15 @@ class medical_patient(models.Model):
                 age = str(rd.years) + "y" +" "+ str(rd.months) + "m" +" "+ str(rd.days) + "d"
                 val.update({'age':age} )
 
-            patient_id  = self.env['ir.sequence'].next_by_code('medical.patient')
-            if patient_id:
-                val.update({
-                            'name':patient_id,
-                           })
+            #patient_id  = self.env['ir.sequence'].next_by_code('medical.patient')
+            #if patient_id:
+                #val.update({
+                            #'name':patient_id,
+                           #})
            
         return super(medical_patient, self).create(vals_list)
-
+    _sql_constraints = [('name_unique', 'unique(name)','A patient with this Identification already exist!')
+]
     @api.constrains('date_of_death')
     def _check_date_death(self):
         for rec in self:
