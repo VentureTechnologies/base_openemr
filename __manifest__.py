@@ -9,8 +9,8 @@
     "summary": "Fisiotime EMR, an electronical medical record. ",
     "category": "Industry",
     "description": """
-    Venture Technologies developed a new odoo/OpenERP module apps
-    This module is used to manage Hospital and Healthcare Management and Clinic Management apps. 
+    Venture Technologies developed a new Odoo module app
+    This module is used to manage Hospitals and Healthcare and Clinic Management. 
     manage clinic manage Patient hospital in odoo manage Healthcare system Patient Management, 
     Odoo Hospital Management odoo Healthcare Management Odoo Clinic Management
     Odoo hospital Patients

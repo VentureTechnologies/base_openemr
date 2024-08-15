@@ -6,8 +6,7 @@ from datetime import date,datetime
 from dateutil.relativedelta import relativedelta
 from odoo.exceptions import UserError, ValidationError
 
-class medical_patient(models.Model):
-    
+class medical_patient(models.Model):    
     _name = 'medical.patient'
     _description = 'medical patient'
     _rec_name = 'patient_id'
