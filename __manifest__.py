@@ -5,6 +5,7 @@
 
     "name": "Fisiotime EMR",
     "version": "17.0.0.2",
+    "module_type": "official",
     "currency": 'USD',
     "summary": "Fisiotime EMR, an electronical medical record. ",
     "category": "Industry",
