@@ -86,7 +86,7 @@
                                     </group>
                                 </group>
                             </page>
-
+                            
                             <page string="Diseases">
                                 <field name="patient_disease_ids"
                                     nolabel="1" widget="section_and_note_one2many"/>
@@ -428,5 +428,6 @@
             <field name="view_mode">tree,form</field>
             <field name="domain">[('patient_id', '=', active_id)]</field>
         </record>
+
 
 </odoo>

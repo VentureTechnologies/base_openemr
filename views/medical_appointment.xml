@@ -4,7 +4,7 @@
         <field name="name">medical.appointment.form.view</field>
         <field name="model">medical.appointment</field>
         <field name="arch" type="xml">
-            <form string="Appointment">
+            <form string="Visit">
                 <header>
                     <button
                             name="%(base_openemr.action_medical_appointments_invoice_wizard)d"
@@ -15,7 +15,7 @@
                         <div class="oe_left" style="width: 500px;">
                             <div class="oe_title" style="width: 390px;">
                                 <label class="oe_edit_only" for="name"
-                                       string="Appointment #"/>
+                                       string="Visit #"/>
                                 <h1>
                                     <field name="name" class="oe_inline"/>
                                 </h1>
@@ -70,8 +70,8 @@
         <field name="name">medical.appointment.calendar.view</field>
         <field name="model">medical.appointment</field>
         <field name="arch" type="xml">
-            <calendar string="Appointments" color="doctor_id"
-                      quick_create="False" date_start="appointment_date">
+            <calendar string="Visits" color="doctor_id"
+                      quick_create="False" date_start="appointment_date" date_stop="appointment_end">
                 <field name="patient_id"/>
                 <field name="doctor_id"/>
             </calendar>
@@ -96,14 +96,14 @@
     </record>
 
     <record id="action_medical_appointment" model="ir.actions.act_window">
-        <field name="name">Appointments</field>
+        <field name="name">Visits</field>
         <field name="res_model">medical.appointment</field>
         <field name="binding_view_types">form</field>
-        <field name="view_mode">tree,form,calendar</field>
+        <field name="view_mode">calendar,tree,form</field>
     </record>
 
     <record id="action_view_appointment_id_new" model="ir.actions.act_window">
-        <field name="name">Appointments</field>
+        <field name="name">Visits</field>
         <field name="res_model">medical.appointment</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>

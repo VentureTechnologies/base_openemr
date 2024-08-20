@@ -11,7 +11,24 @@ class medical_appointment(models.Model):
 	_description = "Medical Appointment"
 	_inherit = 'mail.thread'
 
-	name = fields.Char(string="Appointment ID", readonly=True ,copy=True)
+	@api.onchange('duration')
+	def onchange_duration(self):
+		for rec in self:
+			if rec.duration:
+				rec.appointment_end = rec.appointment_date + timedelta(minutes=rec.duration) 
+			else:
+				rec.appointment_end = ""
+
+	@api.onchange('appointment_date')
+	def onchange_appointment_date(self):
+		for rec in self:
+			if rec.appointment_date:
+				rec.appointment_end = rec.appointment_date + timedelta(minutes=rec.duration) 
+			else:
+				rec.appointment_end = ""
+
+
+	name = fields.Char(string="Visit ID", readonly=True ,copy=True)
 	is_invoiced = fields.Boolean(copy=False,default = False)
 	institution_partner_id = fields.Many2one('res.partner',domain=[('is_institution','=',True)],string="Health Center")
 	inpatient_registration_id = fields.Many2one('medical.inpatient.registration',string="Inpatient Registration")
@@ -25,11 +42,11 @@ class medical_appointment(models.Model):
 			('a', 'Normal'),
 			('b', 'Urgent'),
 			('c', 'Medical Emergency'),
-		], 'Urgency Level', sort=False,default="b")
-	appointment_date = fields.Datetime('Appointment Date',required=True,default = fields.Datetime.now)
-	appointment_end = fields.Datetime('Appointment End',required=True)
+		], 'Urgency Level', sort=False,default="a")
+	appointment_date = fields.Datetime('Visit Date',required=True,default = fields.Datetime.now)
+	appointment_end = fields.Datetime(compute=onchange_duration,string='Visit End',required=True)
 	doctor_id = fields.Many2one('medical.physician','Physician',required=True)
-	no_invoice = fields.Boolean(string='Invoice exempt',default=True)
+	no_invoice = fields.Boolean(string='Invoice exempt',default=False)
 	validity_status = fields.Selection([
 			('invoice', 'Invoice'),
 			('tobe', 'To be Invoiced'),
@@ -42,7 +59,7 @@ class medical_appointment(models.Model):
 	medical_patient_psc_ids = fields.Many2many('medical.patient.psc',string='Pediatrics Symptoms Checklist')
 	medical_prescription_order_ids = fields.One2many('medical.prescription.order','appointment_id',string='Prescription')
 	insurer_id = fields.Many2one('medical.insurance','Insurer')
-	duration = fields.Integer('Duration')
+	duration = fields.Integer('Duration (minutes)', default=60)
  
 	def _valid_field_parameter(self, field, name):
 		return name == 'sort' or super()._valid_field_parameter(field, name)
@@ -60,11 +77,10 @@ class medical_appointment(models.Model):
 	def create(self, vals_list):
 		for vals in vals_list:
 			vals['name'] = self.env['ir.sequence'].next_by_code('medical.appointment') or 'APT'
-			msg_body = 'Appointment created'
+			msg_body = 'Visit created'
 			for msg in self:
 				msg.message_post(body=msg_body)
 		return super(medical_appointment, self).create(vals_list)
-
 
 	@api.onchange('inpatient_registration_id')
 	def onchange_patient(self):
@@ -84,7 +100,6 @@ class medical_appointment(models.Model):
 
 	def print_prescription(self):
 		return self.env.ref('base_openemr.report_print_prescription').report_action(self)
-
 
 	def view_patient_invoice(self):
 		self.write({'state': 'cancel'})
@@ -129,9 +144,8 @@ class medical_appointment(models.Model):
 				if res:
 					result['domain'] = "[('id','=',%s)]" % res.id
 		else:
-			 raise UserError(_(' The Appointment is invoice exempt'))
+			raise UserError(_(' The Visit is invoice exempt'))
 		return result
 
 	
 		
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
