@@ -4,7 +4,7 @@
 {
 
     "name": "Fisiotime EMR",
-    "version": "17.0.0.1",
+    "version": "17.0.0.2",
     "module_type": "official",
     "currency": 'USD',
     "summary": "Apps basic Hospital Management system Healthcare Management Clinic Management apps manage clinic manage Patient hospital manage Healthcare system Patient Management Hospital Management Healthcare Management Clinic Management hospital Lab Test Request",
