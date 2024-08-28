@@ -92,8 +92,7 @@
                                     nolabel="1" widget="section_and_note_one2many"/>
                             </page>
 
-
-                            <page string="Socioeconomics">
+                            <page string="Socioeconomics" invisible="1">
                                 <notebook>
                                     <page string="Main">
                                         <group string="General">
@@ -167,8 +166,10 @@
                                     </page>
                                 </notebook>
                             </page>
-                            <page string="Gyneco / Obs"
-                                 invisible="sex == 'm'">
+
+                            <page string="Gyneco / Obs" invisible="1">
+                            <!-- <page string="Gyneco / Obs"
+                                 invisible="sex == 'm'"> -->
                                 <group string="Gyneco">
                                     <group string="General">
                                         <field name="fertile" />
@@ -349,8 +350,7 @@
                                 </notebook>
                             </page>
 
-
-                            <page string="Medication">
+                            <page string="Medication" invisible="1">
                                 <field name="medication_ids" widget="section_and_note_one2many" >
                                     <tree>
                                         <field name="medical_medicament_id" />
@@ -362,7 +362,8 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="Vaccinations">
+
+                            <page string="Vaccinations" invisible="1">
                               
                                 <field name="medical_vaccination_ids"
                                     nolabel="1"  >
@@ -374,7 +375,6 @@
                                     </tree>
                                 </field>
                             </page>
-
 
                         </notebook>
                     </sheet>

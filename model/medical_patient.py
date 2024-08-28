@@ -17,6 +17,8 @@ class medical_patient(models.Model):
         The purpose of the method is to define a domain for the available
         purchase orders.
         '''
+        name_vat = self.patient_id.vat
+        self.name = name_vat
         address_id = self.patient_id
         self.partner_address_id = address_id
 
@@ -34,11 +36,13 @@ class medical_patient(models.Model):
             else:
                 rec.age = "No Date Of Birth!!"
 
+
+
     patient_id = fields.Many2one('res.partner',domain=[('is_patient','=',True)],string="Patient", required= True)
-    name = fields.Char(string='Identification', required=True)
+    name = fields.Char(string='Identification')
     last_name = fields.Char('Last name')
     date_of_birth = fields.Date(string="Date of Birth")
-    sex = fields.Selection([('m', 'Male'),('f', 'Female')], string ="Sex")
+    sex = fields.Selection([('m', 'Male'),('f', 'Female')], string ="Gender")
     age = fields.Char(compute=onchange_age,string="Patient Age",store=True)
     critical_info = fields.Text(string="Patient Critical Information")
     photo = fields.Binary(string="Picture")
@@ -307,5 +311,3 @@ class medical_patient(models.Model):
     def copy(self, default=None):
         for rec in self:
             raise UserError(_('You Can Not Duplicate Patient.' ))
-
-# vim=expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
