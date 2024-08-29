@@ -376,6 +376,12 @@
                                 </field>
                             </page>
 
+                            <page string="Visits History" >
+                                <tree>
+                                    <field name="patient_visit_hitory"/>
+                                </tree>      
+                            </page>
+
                         </notebook>
                     </sheet>
                 </form>

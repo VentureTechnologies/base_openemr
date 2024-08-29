@@ -55,13 +55,13 @@ class medical_patient(models.Model):
     receivable = fields.Float(string="Receivable", readonly=True)
     current_insurance_id = fields.Many2one('medical.insurance',string="Insurance")
     partner_address_id = fields.Many2one('res.partner', string="Address", )
-
     street = fields.Char(related='patient_id.street', readonly=False)
     street2 = fields.Char(related='patient_id.street2', readonly=False)
     zip_code = fields.Char(related='patient_id.zip', readonly=False)
     city = fields.Char(related='patient_id.city', readonly=False)
     state_id = fields.Many2one("res.country.state", related='patient_id.state_id', readonly=False)
     country_id = fields.Many2one('res.country', related='patient_id.country_id', readonly=False)
+    patient_visit_hitory = fields.One2many(comodel_name="medical.appointment", inverse_name="patient_id", string="Visit History")
     
     primary_care_physician_id = fields.Many2one('medical.physician', string="Primary Care Doctor")
     patient_status = fields.Char(string="Hospitalization Status",readonly=True)
