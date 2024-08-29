@@ -53,7 +53,7 @@ class medical_appointment(models.Model):
 		], 'Status', sort=False,readonly=True,default='tobe')
 	appointment_validity_date = fields.Datetime('Validity Date')
 	consultations_id = fields.Many2one('product.product','Consultation Service',required=True)
-	comments = fields.Text(string="Info")
+	comments = fields.Text(string="Comments")
 	state = fields.Selection([('draft','Draft'),('confirmed','Confirm'),('cancel','Cancel'),('done','Done')],string="State",default='draft')
 	invoice_to_insurer = fields.Boolean('Invoice to Insurance')
 	medical_patient_psc_ids = fields.Many2many('medical.patient.psc',string='Pediatrics Symptoms Checklist')

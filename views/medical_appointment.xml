@@ -85,12 +85,13 @@
             <tree string="Appointment Information">
                 <field name="name"/>
                 <field name="patient_id"/>
-                <field name="patient_status"/>
-                <field name="urgency_level"/>
+                <!--<field name="patient_status"/>
+                <field name="urgency_level"/>-->
                 <field name="appointment_date"/>
-                <field name="appointment_end"/>
+                <!--<field name="appointment_end"/>-->
                 <field name="doctor_id"/>
-                <field name="institution_partner_id"/>
+                <!--<field name="institution_partner_id"/>-->
+                <field name="comments" />
             </tree>
         </field>
     </record>
