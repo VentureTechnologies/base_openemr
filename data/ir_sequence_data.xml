@@ -19,7 +19,7 @@
         <record id="medical_appointment_code_sequence" model="ir.sequence">
             <field name="name">Appointment</field>
             <field name="code">medical.appointment</field>
-            <field name="prefix">VIS</field>
+            <field name="prefix">SEG</field>
             <field name="padding">0</field>
         </record>
 
