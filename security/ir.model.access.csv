@@ -18,8 +18,8 @@ access_medical_patient_chemist,medical.group.patient.chemist,model_medical_patie
 access_medical_patient_medical_group,medical.group.patient.medical.group,model_medical_patient,group_medical_group,1,0,0,0
 access_doctor_medical_patient_disease_chemist,medical.doctor.group.medical.patient.disease.chemist,model_medical_patient_disease,group_chemist,1,0,0,0
 access_medical_lab_test_critearea_chem,medical.group.medical.lab.test.critearea.chem,model_medical_test_critearea,group_chemist,1,1,1,1
-access_medical_physicians,medical.group.physician,model_medical_physician,group_medical_group,1,1,1,
-access_medical_physician_doctor,medical.group.physician.doctor,model_medical_physician,bi_group_doctor,1,1,1,
+access_medical_physicians,medical.group.physician,model_medical_physician,group_medical_group,1,1,1,0
+access_medical_physician_doctor,medical.group.physician.doctor,model_medical_physician,bi_group_doctor,1,1,1,0
 access_dose_unit,medical.group.dose.unit,model_medical_dose_unit,group_medical_group,1,1,1,1
 access_medical_patients_medication,medical.group.patient.medication,model_medical_patient_medication,group_medical_group,1,0,0,0
 access_medical_for_patient_medication,medical.group.patient,model_medical_patient,group_medical_group,1,0,0,0
@@ -122,7 +122,7 @@ access_medical_patient_lab_test,access_medical_patient_lab_test,model_medical_pa
 access_medical_prescription_order,access_medical_prescription_order,model_medical_prescription_order,base.group_user,1,0,0,0
 access_medical_prescription_order_doctor,access_medical_prescription_order_doctor,model_medical_prescription_order,bi_group_doctor,1,1,1,1
 access_medical_patient_psc,access_medical_patient_psc,model_medical_patient_psc,base.group_user,1,0,0,0
-access_medical_medicament_doctor,access_medical_medicament_doctor,model_medical_medicament,bi_group_doctor,1,1,1,
+access_medical_medicament_doctor,access_medical_medicament_doctor,model_medical_medicament,bi_group_doctor,1,1,1,0
 access_pet_type,access_pet_type,model_pet_type,base.group_user,1,0,0,0
 access_medical_patient_evaluation,access_medical_patient_evaluation,model_medical_patient_evaluation,base.group_user,1,0,0,0
 access_medical_appointment,access_medical_appointment,model_medical_appointment,base.group_user,1,0,0,0
@@ -134,11 +134,54 @@ access_medical_appointments_invoice_wizard,medical.appointments.invoice.wizard,m
 access_create_prescription_invoice,create.prescription.invoice,model_create_prescription_invoice,base.group_user,1,1,1,1
 access_medical_lab_test_create,medical.lab.test.create,model_medical_lab_test_create,base.group_user,1,1,1,1
 access_medical_lab_test_invoice,medical.lab.test.invoice,model_medical_lab_test_invoice,base.group_user,1,1,1,1
-
-
-
 base_openemr.access_create_prescription_shipment,access_create_prescription_shipment,base_openemr.model_create_prescription_shipment,base.group_user,1,1,1,1
 base_openemr.access_medical_health_service_invoice,access_medical_health_service_invoice,base_openemr.model_medical_health_service_invoice,base.group_user,1,1,1,1
 base_openemr.access_medical_patient_diseases,access_medical_patient_diseases,base_openemr.model_medical_patient_diseases,base.group_user,1,1,1,1
-
 access_medical_insurance_global_doctor,medical.insurance,model_medical_insurance,base.group_user,1,0,0,0
+access_diseases_category_doc,medical.group.diseases.category.doc,model_medical_pathology_category,group_physiotherapist,1,0,0,0
+access_diseases_doc,medical.group.diseases.doc,model_medical_pathology,group_physiotherapist,1,0,0,0
+access_vaccination_doctor,medical.group.vaccination.doctor,model_medical_vaccination,group_physiotherapist,1,0,0,0
+access_medical_patient_doctor,medical.group.patient.doctor,model_medical_patient,group_physiotherapist,1,1,1,0
+access_medical_physician_doctor,medical.group.physician.doctor,model_medical_physician,group_physiotherapist,1,1,1,0
+access_doctor_medical_inpatient_registration,medical.doctor.group.medical.inpatient.registration,model_medical_inpatient_registration,group_physiotherapist,0,0,0,0
+access_doctor_medical_patient_disease,medical.doctor.group.medical.patient.disease,model_medical_patient_disease,group_physiotherapist,1,1,1,0
+access_doctor_medical_patient_disease_line,medical.doctor.group.medical.patient.disease.line,model_medical_prescription_line,group_physiotherapist,1,1,1,1
+access_doctor_medical_dose_unit,medical.doctor.group.medical_dose_unit,model_medical_dose_unit,group_physiotherapist,1,1,1,0
+access_sale_order,sale.order,sale.model_sale_order,group_physiotherapist,1,1,1,0
+access_sale_order_line,sale.order.line,sale.model_sale_order_line,group_physiotherapist,1,1,1,1
+access_sale_order_line_accountant,sale.order.line accountant,sale.model_sale_order_line,group_physiotherapist,1,1,0,0
+access_account_move_salesman,account_move salesman,account.model_account_move,group_physiotherapist,1,1,1,0
+access_account_move_manager,account_move manager,account.model_account_move,group_physiotherapist,1,1,1,1
+access_account_move_line_salesmans,account_move.line salesman,account.model_account_move_line,group_physiotherapist,1,1,1,0
+access_account_payment_term_salesman,account_payment_term salesman,account.model_account_payment_term,group_physiotherapist,1,0,0,0
+access_account_analytic_account_salesman,account_analytic_account salesman,analytic.model_account_analytic_account,group_physiotherapist,1,1,1,0
+access_sale_order_manager,sale.order.manager,sale.model_sale_order,group_physiotherapist,1,1,1,1
+access_sale_order_accountant,sale.order.accountant,sale.model_sale_order,group_physiotherapist,1,1,0,0
+access_sale_report_salesman,sale.report,sale.model_sale_report,group_physiotherapist,1,1,1,0
+access_sale_report_manager,sale.report,sale.model_sale_report,group_physiotherapist,1,1,1,1
+access_ir_property_sales,ir.property.sales,base.model_ir_property,group_physiotherapist,1,1,1,1
+access_sale_account_journal,account.journal sale order.user,account.model_account_journal,group_physiotherapist,1,0,0,0
+access_res_partner_sale_manager,res.partner.sale.manager,base.model_res_partner,group_physiotherapist,1,1,1,1
+access_product_template_sale_user,product.template sale use,product.model_product_template,group_physiotherapist,1,0,0,0
+access_product_product_sale_user,product.product sale use,product.model_product_product,group_physiotherapist,1,0,0,0
+access_account_tax_user,account.tax.user,account.model_account_tax,group_physiotherapist,1,0,0,0
+access_ir_attachment_sales,ir.attachment.sales,base.model_ir_attachment,group_physiotherapist,1,1,1,0
+access_ir_attachment_manager,ir.attachment.manager,base.model_ir_attachment,group_physiotherapist,1,1,1,1
+access_product_uom_user,product.uom.user,uom.model_uom_uom,group_physiotherapist,1,0,0,0
+access_product_pricelist_sale_user,product.pricelist.sale.user,product.model_product_pricelist,group_physiotherapist,1,0,0,0
+access_account_account_salesman,account_account salesman,account.model_account_account,group_physiotherapist,1,0,0,0
+access_product_uom_categ_sale_manager,product.uom.categ salemanager,uom.model_uom_category,group_physiotherapist,1,1,1,1
+access_product_uom_sale_manager,product.uom salemanager,uom.model_uom_uom,group_physiotherapist,1,1,1,1
+access_product_category_sale_manager,product.category salemanager,product.model_product_category,group_physiotherapist,1,1,1,1
+access_product_supplierinfo_user,product.supplierinfo.user,product.model_product_supplierinfo,group_physiotherapist,1,0,0,0
+access_product_supplierinfo_sale_manager,product.supplierinfo salemanager,product.model_product_supplierinfo,group_physiotherapist,1,1,1,1
+access_product_pricelist_sale_manager,product.pricelist salemanager,product.model_product_pricelist,group_physiotherapist,1,1,1,1
+access_product_group_res_partner_sale_manager,res_partner group_sale_manager,base.model_res_partner,group_physiotherapist,1,1,1,0
+access_account_move_line_salesman,account.move.line invoice,account.model_account_move_line,group_physiotherapist,1,0,0,0
+access_sale_order_invoicing_payments,sale.order,sale.model_sale_order,group_physiotherapist,1,1,0,0
+access_sale_order_line_invoicing_payments,sale.order.line,sale.model_sale_order_line,group_physiotherapist,1,1,0,0
+access_medical_prescription_order_doctor,access_medical_prescription_order_doctor,model_medical_prescription_order,group_physiotherapist,0,0,0,0
+access_medical_medicament_doctor,access_medical_medicament_doctor,model_medical_medicament,group_physiotherapist,1,1,1,0
+access_medical_insurance,medical.insurance,model_medical_insurance,group_physiotherapist,1,1,1,0
+access_medical_patient_lab_tests,medical.patient.lab.test,model_medical_patient_lab_test,group_physiotherapist,0,0,0,0
+access_medical_appointment1,access_medical_appointment1,model_medical_appointment,group_physiotherapist,1,1,1,0
