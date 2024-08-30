@@ -35,7 +35,7 @@ msgstr "Actualmente a dieta "
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__diet_info
 msgid " Diet info "
-msgstr " información sobre la dieta "
+msgstr " Información sobre la dieta "
 
 #. module: base_openemr
 #. odoo-python
@@ -736,12 +736,12 @@ msgstr "Edad de inicio de drogas"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__age_start_drinking
 msgid "Age started to drink"
-msgstr "La edad empezó a beber."
+msgstr "A que edad empezó a beber?"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__age_start_smoking
 msgid "Age started to smoke"
-msgstr "La edad empezó a fumar."
+msgstr "A que edad empezó a fumar?"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_disease__age
@@ -1003,7 +1003,7 @@ msgstr "Creencia"
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sexual_preferences__b
 msgid "Bisexual"
-msgstr "bisexuales"
+msgstr "Bisexual"
 
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_preinatal__lacerations__br
@@ -1243,7 +1243,7 @@ msgstr "Marque esta casilla si el paciente muestra signos de temblores."
 #. module: base_openemr
 #: model:res.groups,name:base_openemr.group_chemist
 msgid "Chemist"
-msgstr "químico"
+msgstr "Químico"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_icu_chest_drainage__medical_patient_rounding_chest_drainage_id
@@ -1316,7 +1316,7 @@ msgstr "Código"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__coffee
 msgid "Coffee"
-msgstr "café"
+msgstr "Café"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__colposcopy_history_ids
@@ -2297,7 +2297,7 @@ msgstr "Hábitos de drogas"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__drug_addiction
 msgid "Drug addiction"
-msgstr "drogadicción"
+msgstr "Drogadicción"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_icu_ventilation__mv_period
@@ -2358,7 +2358,7 @@ msgstr "secreción del oído"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__eats_alone
 msgid "Eats alone"
-msgstr "come solo"
+msgstr "Come solo"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_evaluation__edema
@@ -2511,7 +2511,7 @@ msgstr "Exfumador"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__excercise
 msgid "Excercise"
-msgstr "ejercicio"
+msgstr "Ejercicio"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_test_critearea__excluded
@@ -3156,7 +3156,7 @@ msgstr "Seguridad en el hogar"
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sexual_preferences__g
 msgid "Homosexual"
-msgstr "homosexuales"
+msgstr "Homosexuales"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_rounding__hospital_location_id
@@ -3332,7 +3332,7 @@ msgstr ""
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__drug_iv
 msgid "IV drug user"
-msgstr "usuario de drogas intravenosas"
+msgstr "Usuario de drogas intravenosas"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_lab__name
@@ -5568,6 +5568,11 @@ msgid "Physicians"
 msgstr "Médicos"
 
 #. module: base_openemr
+#: model:res.groups,name:base_openemr.group_physiotherapist
+msgid "Physiotherapist"
+msgstr "Fisioterapueta"
+
+#. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__photo
 msgid "Picture"
 msgstr "Imagen"
@@ -6918,7 +6923,7 @@ msgstr "Dolor torácico"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__fam_apgar_timesharing
 msgid "Time sharing"
-msgstr "tiempo compartido"
+msgstr "Tiempo compartido"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_evaluation__symptom_tinnitus
@@ -6984,7 +6989,7 @@ msgstr "Traqueotomía"
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sexual_preferences__t
 msgid "Transexual"
-msgstr "transexual"
+msgstr "Transexual"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_inpatient_registration__bed_transfers_ids
@@ -7000,7 +7005,7 @@ msgstr "mentira transversal"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__trash
 msgid "Trash recollection"
-msgstr "recolección de basura"
+msgstr "Recolección de basura"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_disease__treatment_description
@@ -7896,6 +7901,11 @@ msgstr "el usuario tendrá acceso a sus propios datos en el grupo Doctor."
 #: model:res.groups,comment:base_openemr.group_medical_group
 msgid "the user will have access to his own data in the Medical Group."
 msgstr "el usuario tendrá acceso a sus propios datos en el Grupo Médico."
+
+#. module: base_openemr
+#: model:res.groups,comment:base_openemr.group_physiotherapist
+msgid "the user will have access to his own data in the Physiotherapist."
+msgstr "el usuario tendrá acceso a sus propios datos como Fisioterapueta."
 
 #. module: base_openemr
 #: model:res.groups,comment:base_openemr.group_receptionist
