@@ -92,7 +92,7 @@
                                     nolabel="1" widget="section_and_note_one2many"/>
                             </page>
 
-                            <page string="Socioeconomics" invisible="1">
+                            <page string="Socioeconomics" groups="base_openemr.bi_group_doctor">
                                 <notebook>
                                     <page string="Main">
                                         <group string="General">
@@ -166,10 +166,8 @@
                                     </page>
                                 </notebook>
                             </page>
-
-                            <page string="Gyneco / Obs" invisible="1">
-                            <!-- <page string="Gyneco / Obs"
-                                 invisible="sex == 'm'"> -->
+                            
+                            <page string="Gyneco / Obs" invisible="sex == 'm'" groups="base_openemr.bi_group_doctor"> 
                                 <group string="Gyneco">
                                     <group string="General">
                                         <field name="fertile" />
@@ -350,7 +348,7 @@
                                 </notebook>
                             </page>
 
-                            <page string="Medication" invisible="1">
+                            <page string="Medication">
                                 <field name="medication_ids" widget="section_and_note_one2many" >
                                     <tree>
                                         <field name="medical_medicament_id" />
@@ -363,7 +361,7 @@
                                 </field>
                             </page>
 
-                            <page string="Vaccinations" invisible="1">
+                            <page string="Vaccinations" groups="base_openemr.bi_group_doctor">
                               
                                 <field name="medical_vaccination_ids"
                                     nolabel="1"  >
