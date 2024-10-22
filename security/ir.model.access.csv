@@ -138,8 +138,10 @@ base_openemr.access_create_prescription_shipment,access_create_prescription_ship
 base_openemr.access_medical_health_service_invoice,access_medical_health_service_invoice,base_openemr.model_medical_health_service_invoice,base.group_user,1,1,1,1
 base_openemr.access_medical_patient_diseases,access_medical_patient_diseases,base_openemr.model_medical_patient_diseases,base.group_user,1,1,1,1
 access_medical_insurance_global_doctor,medical.insurance,model_medical_insurance,base.group_user,1,0,0,0
-access_diseases_category_doc,medical.group.diseases.category.doc,model_medical_pathology_category,group_physiotherapist,1,0,0,0
-access_diseases_doc,medical.group.diseases.doc,model_medical_pathology,group_physiotherapist,1,0,0,0
+access_diseases_category,medical.group.diseases.category,model_medical_pathology_category,group_physiotherapist,1,0,0,0
+access_diseases,medical.group.diseases,model_medical_pathology,group_physiotherapist,1,0,0,0
+access_diseases_category_doc,medical.group.diseases.category.doc,model_medical_pathology_category,group_physiotherapist,1,1,1,0
+access_diseases_doc,medical.group.diseases.doc,model_medical_pathology,group_physiotherapist,1,1,1,0
 access_vaccination_doctor,medical.group.vaccination.doctor,model_medical_vaccination,group_physiotherapist,1,0,0,0
 access_medical_patient_doctor,medical.group.patient.doctor,model_medical_patient,group_physiotherapist,1,1,1,0
 access_medical_physician_doctor,medical.group.physician.doctor,model_medical_physician,group_physiotherapist,1,1,1,0
