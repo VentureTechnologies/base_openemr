@@ -48,7 +48,7 @@ class medical_patient(models.Model):
     photo = fields.Binary(string="Picture")
     blood_type = fields.Selection([('A', 'A'),('B', 'B'),('AB', 'AB'),('O', 'O')], string ="Blood Type")
     rh = fields.Selection([('-+', '+'),('--', '-')], string ="Rh")
-    marital_status = fields.Selection([('s','Single'),('m','Married'),('w','Widowed'),('d','Divorced'),('x','Seperated')],string='Marital Status')
+    marital_status = fields.Selection([('s','Single'),('m','Married'),('f','Free Union'),('w','Widowed'),('d','Divorced'),('x','Seperated')],string='Marital Status')
     deceased = fields.Boolean(string='Deceased')
     date_of_death = fields.Date(string="Date of Death")
     cause_of_death = fields.Char(string='Cause of Death')
