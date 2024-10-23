@@ -33,6 +33,9 @@
                                 <field name="name" />
                                 <field name="date_of_birth" />
                                 <field name="marital_status" />
+                                <field name="age_year" invisible="1"/>
+                                <field name="relative_id_child" invisible="age_year >= 18" required="age_year &lt; 18"/>
+                                <field name="relative_relation_child" invisible="age_year >= 18" required="age_year &lt; 18"/>  
                             </group>
 
                             <group>
@@ -50,7 +53,13 @@
                                 </div>
                             </group>
                         </group>
-
+                        <group> 
+                            <separator colspan="4"
+                                string="Patient Emergency Contact" />
+                            <newline />
+                            <field name="emergency_name" />
+                            <field name="emergency_phone" widget="phone" on_change="1"/>
+                        </group>
                         <group> 
                             <separator colspan="4"
                                 string="Patient Critical Information" />
@@ -58,6 +67,8 @@
                             <field colspan="2" name="critical_info"
                                 nolabel="1" />
                         </group>
+                        
+                                                        
                         <notebook>
                             <page string="General Information">
                                 <group string="Patient General Information">

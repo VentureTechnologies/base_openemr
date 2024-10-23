@@ -32,6 +32,7 @@ class medical_patient(models.Model):
                 d1 = rec.date_of_birth
                 d2 = datetime.today().date()
                 rd = relativedelta(d2, d1)
+                rec.age_year = int(rd.years)
                 rec.age = str(rd.years) + "y" +" "+ str(rd.months) + "m" +" "+ str(rd.days) + "d"
             else:
                 rec.age = "No Date Of Birth!!"
@@ -39,10 +40,11 @@ class medical_patient(models.Model):
 
 
     patient_id = fields.Many2one('res.partner',domain=[('is_patient','=',True)],string="Patient", required= True)
-    name = fields.Char(string='Identification')
-    last_name = fields.Char('Last name')
+    name = fields.Char(related='patient_id.vat', readonly=False, string='Identification')
+    last_name = fields.Char(string='Last name')
     date_of_birth = fields.Date(string="Date of Birth")
     sex = fields.Selection([('m', 'Male'),('f', 'Female')], string ="Gender")
+    age_year = fields.Integer(string="Age Year",store=True)
     age = fields.Char(compute=onchange_age,string="Patient Age",store=True)
     critical_info = fields.Text(string="Patient Critical Information")
     photo = fields.Binary(string="Picture")
@@ -62,6 +64,10 @@ class medical_patient(models.Model):
     state_id = fields.Many2one("res.country.state", related='patient_id.state_id', readonly=False)
     country_id = fields.Many2one('res.country', related='patient_id.country_id', readonly=False)
     patient_visit_hitory = fields.One2many(comodel_name="medical.appointment", inverse_name="patient_id", string="Visit History")
+    relative_id_child = fields.Many2one(related='patient_id.relative_partner_id', string="Guardian",readonly=False)
+    relative_relation_child = fields.Char(related='patient_id.relationship', string="Relationship",readonly=False)
+    emergency_name = fields.Char(string="Emergency Name")
+    emergency_phone = fields.Char(string="Emergency Phone")
     
     primary_care_physician_id = fields.Many2one('medical.physician', string="Primary Care Doctor")
     patient_status = fields.Char(string="Hospitalization Status",readonly=True)

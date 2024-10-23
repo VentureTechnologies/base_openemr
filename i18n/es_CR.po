@@ -4272,6 +4272,26 @@ msgid "Free Union"
 msgstr "Unión Libre"
 
 #. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_patient__relative_id_child
+msgid "Guardian"
+msgstr "Responsable del menor"
+
+#. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_patient__relative_relation_child
+msgid "Relationship"
+msgstr "Relación"
+
+#. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_patient__emergency_name
+msgid "Emergency Name"
+msgstr "Nombre Contacto Emergencia"
+
+#. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_patient__emergency_phone
+msgid "Emergency Phone"
+msgstr "Telefono Contacto Emergencia"
+
+#. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_evaluation__masses
 msgid "Masses"
 msgstr "Masas"
@@ -5362,6 +5382,12 @@ msgid "Patient Critical Information"
 msgstr "Información crítica del paciente"
 
 #. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_patient__critical_info
+#: model_terms:ir.ui.view,arch_db:base_openemr.medical_patients_form_view
+msgid "Patient Emergency Contact"
+msgstr "Contacto de Emergencia del paciente"
+
+#. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__patient_disease_ids
 msgid "Patient Disease"
 msgstr "Enfermedad del paciente"
@@ -6094,7 +6120,7 @@ msgstr "Parentezco"
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__relative_in_prison
 msgid "Relative in prison"
-msgstr "Patiente en prisión"
+msgstr "Pariente en prisión"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_res_partner__relative_partner_id
