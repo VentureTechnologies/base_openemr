@@ -4267,6 +4267,11 @@ msgid "Married"
 msgstr "Casado"
 
 #. module: base_openemr
+#: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__marital_status__f
+msgid "Free Union"
+msgstr "Unión Libre"
+
+#. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient_evaluation__masses
 msgid "Masses"
 msgstr "Masas"
