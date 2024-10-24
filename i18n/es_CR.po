@@ -4958,8 +4958,13 @@ msgstr "Notas"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_insurance__number
-msgid "Number"
-msgstr "Número"
+msgid "Policy number"
+msgstr "Número Poliza"
+
+#. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_insurance__certificate_number
+msgid "Certificate number"
+msgstr "Número Certificado"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_appointment__message_needaction_counter
