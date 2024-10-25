@@ -8,9 +8,8 @@
 			<field name="priority">2</field>
 			<field name="arch" type="xml">
 				<tree string="Insurance List">
-				     <field name="number"/>
+					<field name="policy_number"/>
                     <field name="medical_insurance_partner_id"/>
-                    <field name="type"/>
                     <field name="insurance_compnay_id"/>
                     <field name="member_since"/>
                     <field name="member_exp"/></tree>
@@ -26,11 +25,11 @@
                         <sheet>
                             <group>
                                 <group>
-                                    <field name="number" required="1"/>
+                                    <field name="number"/>
+									<field name="policy_number"/>
 									<field name="certificate_number"/>
                                     <field name="type"/>
                                     <field name="member_since"/>
-
                                 </group>
                                 <group>
                                     <field name="medical_insurance_partner_id" widget="res_partner_many2one"/>
@@ -56,7 +55,7 @@
 			<field name="arch" type="xml">
 				<search string="Search Insurances">
 					<separator orientation="vertical" />
-					<field name="number" />
+					<field name="policy_number" />
 					<field name="insurance_compnay_id" />
 					<newline />
 				</search>

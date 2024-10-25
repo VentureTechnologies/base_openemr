@@ -23,6 +23,13 @@
             <field name="padding">0</field>
         </record>
 
+        <record id="medical_insurance_code_sequence" model="ir.sequence">
+            <field name="name">Insurance ID</field>
+            <field name="code">medical.insurance_id</field>
+            <field name="prefix">INS%(year)s00</field>
+            <field name="padding">0</field>
+        </record>
+
         <record id="medical_health_service_code_sequence" model="ir.sequence">
             <field name="name">Service</field>
             <field name="code">medical.health_service</field>

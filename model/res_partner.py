@@ -13,7 +13,7 @@ class res_partner(models.Model):
     is_doctor = fields.Boolean(string="Doctor")
     is_insurance_company = fields.Boolean(string='Insurance Company')
     is_pharmacy = fields.Boolean(string="Pharmacy")
-    patient_insurance_ids = fields.One2many('medical.insurance','patient_id')
+    patient_insurance_ids = fields.One2many('medical.insurance','medical_insurance_partner_id')
     is_institution = fields.Boolean('Institution')
     company_insurance_ids = fields.One2many('medical.insurance','insurance_compnay_id','Insurance')
     reference = fields.Char('ID Number')
