@@ -74,26 +74,28 @@
                                 <group string="Patient General Information">
                                     <group>
                                         <field name="blood_type" />
-                                        <field name="current_insurance_id" />
+                                        <field name="primary_care_physician_id" />
                                     </group>
                                     <group>
                                         <field name="rh" />
                                         <field name="receivable" />
-                                        <field name="primary_care_physician_id" />
+                                        
+                                        <field name="deceased"/>
+                                        <field name="date_of_death" invisible="not deceased" required="deceased == 1"/>
+                                        <field name="cause_of_death" invisible="not deceased" />
                                     </group>
                                 </group>
 
                                 <group colspan="4"
-                                    string="Patient Extra Information">
-                                    <field colspan="4" name="general_info"
-                                        nolabel="1" />
-                                    <newline />
+                                    string="Patient Insurance Information">
                                     <group>
-                                        <field name="deceased" />
-                                        <field name="date_of_death"
-                                             invisible="not deceased" required="deceased == 1"/>
-                                        <field name="cause_of_death"
-                                            invisible="not deceased" />
+                                        <field name="current_insurance_id" />
+                                        <field name="current_insurance_company" />
+                                    </group>
+                                    <group>
+                                        <field name="current_insurance_owner" />
+                                        <field name="current_insurance_exp" />
+                                        
                                     </group>
                                 </group>
                             </page>
