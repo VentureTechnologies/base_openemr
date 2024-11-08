@@ -4957,7 +4957,7 @@ msgid "Notes"
 msgstr "Notas"
 
 #. module: base_openemr
-#: model:ir.model.fields,field_description:base_openemr.field_medical_insurance__number
+#: model:ir.model.fields,field_description:base_openemr.field_medical_insurance__policy_number
 msgid "Policy number"
 msgstr "Número Poliza"
 
@@ -6524,6 +6524,26 @@ msgstr "Dormir"
 #: model:ir.model.fields,field_description:base_openemr.field_medical_patient__sleep_during_daytime
 msgid "Sleep at daytime"
 msgstr "Dormir durante el día"
+
+#. module: base_openemr
+#: model:ir.model.fields,field_description:base_openemr.field_medical_patient__sleep_quality
+msgid "Sleep Quality"
+msgstr "Calidad del sueño"
+
+#. module: base_openemr
+#: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sleep_quality__g
+msgid "Good"
+msgstr "Bueno"
+
+#. module: base_openemr
+#: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sleep_quality__r
+msgid "Regular"
+msgstr "Regular"
+
+#. module: base_openemr
+#: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sleep_quality__b
+msgid "Bad"
+msgstr "Malo"
 
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient_rounding__pupillary_reactivity__sluggish
