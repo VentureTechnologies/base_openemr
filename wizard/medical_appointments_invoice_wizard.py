@@ -23,6 +23,7 @@ class medical_appointments_invoice_wizard(models.TransientModel):
                 raise UserError(_('All ready Invoiced.'))
             if lab_req.no_invoice == False:
                 sale_journals = self.env['account.journal'].search([('type','=','sale')])
+                company = self.env.user.company_id
                 invoice_vals = {
                 'name': self.env['ir.sequence'].next_by_code('medical_app_inv_seq'),
                 'invoice_origin': lab_req.name or '',
@@ -30,13 +31,14 @@ class medical_appointments_invoice_wizard(models.TransientModel):
                 'ref': False,
                 'partner_id': lab_req.patient_id.patient_id.id or False,
                 'partner_shipping_id':lab_req.patient_id.patient_id.id,
-                'currency_id':lab_req.patient_id.patient_id.currency_id.id ,
-                'invoice_payment_term_id': False,
+                'currency_id':lab_req.patient_id.patient_id.currency_id.id,
                 'fiscal_position_id': lab_req.patient_id.patient_id.property_account_position_id.id,
                 'team_id': False,
                 'invoice_date': date.today(),
                 'journal_id' : sale_journals.id,
                 }
+                if company.activity_id:
+                    invoice_vals['economic_activity_id'] = company.activity_id.id 
                 res = account_invoice_obj.create(invoice_vals)
                 invoice_line_account_id = False
                 if lab_req.consultations_id.id:
@@ -86,5 +88,3 @@ class medical_appointments_invoice_wizard(models.TransientModel):
                 raise UserError(_(' The Appointment is invoice exempt   '))
             return result
 
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

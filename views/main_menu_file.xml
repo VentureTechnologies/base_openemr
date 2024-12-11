@@ -3,7 +3,7 @@
         <!-- Main Menu -->
         <menuitem 
         	id="main_menu_hospital_management"
-        	name="Fisiotime EMR"
+        	name="Medical Record"
             web_icon="base_openemr,static/description/icon.png"
            />
 
