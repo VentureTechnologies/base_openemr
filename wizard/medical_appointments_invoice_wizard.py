@@ -32,7 +32,7 @@ class medical_appointments_invoice_wizard(models.TransientModel):
                 'partner_id': lab_req.patient_id.patient_id.id or False,
                 'partner_shipping_id':lab_req.patient_id.patient_id.id,
                 'currency_id':lab_req.patient_id.patient_id.currency_id.id ,
-                'invoice_payment_term_id': False,
+                'invoice_payment_term_id': '01',
                 'fiscal_position_id': lab_req.patient_id.patient_id.property_account_position_id.id,
                 'team_id': False,
                 'invoice_date': date.today(),
