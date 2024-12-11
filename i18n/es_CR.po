@@ -2701,8 +2701,8 @@ msgstr "Peleas con otros niños."
 
 #. module: base_openemr
 #: model:ir.ui.menu,name:base_openemr.main_menu_hospital_management
-msgid "Fisiotime EMR"
-msgstr "EMR fisiotime"
+msgid "Medical Record"
+msgstr "Expediente"
 
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_neomatal_apgar__apgar_activity__2
