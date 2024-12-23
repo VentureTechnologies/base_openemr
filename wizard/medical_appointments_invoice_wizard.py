@@ -23,9 +23,9 @@ class medical_appointments_invoice_wizard(models.TransientModel):
                 raise UserError(_('All ready Invoiced.'))
             if lab_req.no_invoice == False:
                 sale_journals = self.env['account.journal'].search([('type','=','sale')])
-                company = self.env.user.company_id
+                company = self.env.company
                 invoice_vals = {
-                'name': self.env['ir.sequence'].next_by_code('medical_app_inv_seq'),
+                'name': lab_req.name,
                 'invoice_origin': lab_req.name or '',
                 'move_type': 'out_invoice',
                 'ref': False,
