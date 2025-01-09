@@ -390,17 +390,26 @@
                                     </tree>
                                 </field>
                             </page>
-
-                            <page string="Visits History" >
-                                <tree>
-                                    <field name="patient_visit_hitory"/>
-                                </tree>      
+                            <page string="Attachments" >
+                                <field name="patient_attachment_ids">
+                                    <tree>
+                                        <field name="name" string="File Name"/>
+                                        <field name="create_date" string="Creation Date"/>
+                                        <field name="type" string="Document Type"/>
+                                        <button name="action_delete_attachment" 
+                                                string="Delete" 
+                                                type="object" 
+                                                confirm="Are you sure you want to delete this record?" 
+                                        />
+                                    </tree> 
+                                </field>                                                                
                             </page>
-
+                            <page string="Visits History" >
+                                <field name="patient_visit_hitory"/>                                    
+                            </page>
                         </notebook>
                     </sheet>
                 </form>
-
             </field>
         </record>
 

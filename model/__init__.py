@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Venture Technologies. See LICENSE file for full copyright and licensing details.
 from . import bed_transfer
+from . import ir_attachment
 from . import medical_diagnostic_hypotesis
 from . import medical_patient_evaluation
 from . import medical_diet_belief
@@ -65,6 +66,3 @@ from . import medical_vaccitation
 from . import pet_type
 from . import psc_code
 from . import res_partner
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:s
