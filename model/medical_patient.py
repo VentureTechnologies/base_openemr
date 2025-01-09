@@ -73,6 +73,8 @@ class medical_patient(models.Model):
     relative_relation_child = fields.Char(related='patient_id.relationship', string="Relationship",readonly=False)
     emergency_name = fields.Char(string="Emergency Name")
     emergency_phone = fields.Char(string="Emergency Phone")
+    patient_attachment_ids = fields.Many2many('ir.attachment', string="Attachments", 
+                                              domain=[('res_model', '=', 'medical.patient')])
     
     primary_care_physician_id = fields.Many2one('medical.physician', string="Primary Care Doctor")
     patient_status = fields.Char(string="Hospitalization Status",readonly=True)
@@ -282,6 +284,7 @@ class medical_patient(models.Model):
     deaths_1st_week = fields.Integer('Deceased after 1st week')
     full_term = fields.Integer('Full Term')
     ses_notes = fields.Text('Notes')
+    
 
     def _valid_field_parameter(self, field, name):
         return name == 'sort' or super()._valid_field_parameter(field, name)
@@ -323,3 +326,5 @@ class medical_patient(models.Model):
     def copy(self, default=None):
         for rec in self:
             raise UserError(_('You Can Not Duplicate Patient.' ))
+    
+
