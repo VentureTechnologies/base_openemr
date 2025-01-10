@@ -2687,7 +2687,7 @@ msgstr "Se siente triste, infeliz"
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__sex__f
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_pediatrics_growth_charts_who__sex__f
 msgid "Female"
-msgstr "Mujer"
+msgstr "Femenino"
 
 #. module: base_openemr
 #: model:ir.model.fields.selection,name:base_openemr.selection__medical_patient__anticonceptive__10
