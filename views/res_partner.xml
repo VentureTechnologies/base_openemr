@@ -20,7 +20,7 @@
                             <field name="is_pharmacy" />
                         </group>
                      
-                        <field name="company_insurance_ids" colspan="4" />
+                        <field name="patient_insurance_ids" colspan="4" />
                     </page>
                 </notebook>
             </field>
@@ -46,4 +46,3 @@
             sequence="0" parent="menu_insurance" />
 
 </odoo>
-

@@ -55,7 +55,7 @@ class medical_patient(models.Model):
     date_of_death = fields.Date(string="Date of Death")
     cause_of_death = fields.Char(string='Cause of Death')
     receivable = fields.Float(string="Receivable", readonly=True)
-    current_insurance_id = fields.Many2one('medical.insurance')
+    current_insurance_id = fields.Many2one('medical.insurance', domain="[('medical_insurance_partner_id','=',patient_id)]")
     current_insurance_company = fields.Many2one(related='current_insurance_id.insurance_compnay_id', string="Insurance Company")
     current_insurance_owner = fields.Many2one(related='current_insurance_id.medical_insurance_partner_id', string="Insurance Owner")
     current_insurance_policy = fields.Char(related='current_insurance_id.policy_number', string="Policy Number")
