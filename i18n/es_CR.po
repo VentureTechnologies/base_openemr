@@ -5514,6 +5514,10 @@ msgstr "Información del paciente"
 #: model:ir.model.fields,field_description:base_openemr.field_res_users__patient_insurance_ids
 msgid "Patient Insurance"
 msgstr "Seguro del paciente"
+#. module: base_openemr
+#: model_terms:ir.ui.view,arch_db:base_openemr.medical_patients_form_view
+msgid "Patient Insurance Information"
+msgstr "Información del Seguro del Paciente"
 
 #. module: base_openemr
 #: model:ir.model.fields,field_description:base_openemr.field_medical_prescription_order__patient_id
